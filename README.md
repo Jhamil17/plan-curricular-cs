@@ -24,23 +24,7 @@ Esta versión corrige un defecto de los criterios de evaluación. No añade cont
 
 ---
 
-## Nota de la revisión 2026.2
-
-Esta versión corrige un defecto estructural de la 2026.1 y añade tres capas nuevas. Se declara aquí porque afecta la interpretación de todo lo que sigue.
-
-**El defecto.** La versión 2026.1 declaraba en §3.1 un régimen de 50–54 h/semana. Al sumar la carga declarada en las 46 fichas de la Parte III, el resultado real era **84–91 h/semana** por ciclo. La discrepancia no era de redondeo: era un factor de 1.7×. Un programa de 84 h/semana sostenidas durante 128 semanas no es exigente, es aritméticamente imposible — implica 12 h diarias los siete días, mientras el propio §10.1 declaraba el domingo libre.
-
-**La corrección.** Las fichas no estaban mal: replican con fidelidad la carga real de sus cursos fuente (MIT 6.1200 son 12 unidades ≈ 12 h/semana; CMU 15-213 exige 15–20 h/semana reales). Lo que estaba mal era **cursar seis de ellas simultáneamente**, algo que ninguna de las cuatro instituciones de referencia permite: un estudiante de MIT lleva cuatro asignaturas, no seis. Por tanto se conservan las 46 fichas intactas y se reconstruye el modelo de tiempo alrededor de ellas (§3, §14). La consecuencia es que **el programa completo no cabe en cuatro años** para nadie, y decirlo es más útil que sostener la ficción.
-
-**Las capas nuevas.**
-
-1. **Sustrato neurobiológico (§9–§11).** La 2026.1 fundaba su metodología en psicología cognitiva —correcta, pero conductual. Se añade el nivel de mecanismo: consolidación sistémica, etiquetado sináptico, error de predicción, arquitectura del sueño, límites de capacidad. No es decoración: cambia decisiones concretas de calendario y de diseño de tarjetas, y explica por qué recortar sueño para estudiar es pérdida neta y no sacrificio.
-2. **Prácticas desacreditadas (§17) y protocolo de reingreso (§18).** Lo primero porque un documento prescriptivo debe declarar también qué no hacer. Lo segundo porque toda ruta de 5+ años se interrumpe, y no tener protocolo de reingreso es la causa dominante de abandono definitivo.
-3. **Plataformas de práctica y evaluación externa (§22–§23).** La 2026.1 listaba cursos y libros; faltaba dónde practicar con corrección automática y dónde medirse contra terceros.
-
-**Verificación.** Los diez puntos que la 2026.1 marcaba como no confirmados fueron verificados contra fuente primaria el 25/07/2026. El resultado está en §32, con lo que se confirmó, lo que se corrigió y lo que sigue abierto.
-
-**Honestidad sobre esta revisión.** La aritmética de horas (§3.2, §26) es verificable y se puede recalcular desde las fichas. Los mecanismos neurobiológicos de §9–§11 están graduados por calidad de evidencia (`■■■` a `■□□`): parte de esa literatura es robusta y replicada, parte es extrapolación de modelos animales, y se señala cuál es cuál. No se declara como establecido nada que no lo esté.
+> Las notas de revisiones anteriores están archivadas en [`CHANGELOG.md`](CHANGELOG.md), según la convención de notas de revisión de [`CONTRIBUTING.md`](CONTRIBUTING.md). La nota de la 2026.2 —que documenta el error de 1.7× en el presupuesto de horas y su corrección— está en §35.
 
 ---
 

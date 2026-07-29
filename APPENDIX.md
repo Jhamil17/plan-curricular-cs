@@ -201,6 +201,17 @@ Sobre las 39 asignaturas con dificultad declarada. Los 7 laboratorios integrador
 
 **Lectura de la tipología.** El 64% de las Pruebas de Dominio (D+S, V, e I) exige articular demostración con artefacto ejecutable. Es la característica que distingue este plan de un currículo de ingeniería (donde dominaría S) y de uno de matemática (donde dominaría D). La categoría mixta es el centro del programa, no un híbrido de conveniencia.
 
+### 29.1 Criterios transversales (nuevo en 2026.3)
+
+La tipología de arriba clasifica las Pruebas de Dominio por **lo que entregan**. Los criterios de §15.7 y §15.8 no clasifican entregables: se superponen a ellos. Por tanto **no reparticionan las 39 ni alteran ningún conteo de la tabla anterior** — una asignatura con criterio-compuerta conserva exactamente su tipo D, S, D+S, V o I. Se registran aquí porque §29 es la sección de trazabilidad, y una Prueba de Dominio que puede reprobarse por un criterio que la tipología no menciona sería intrazable desde la única sección que promete trazarla.
+
+| Criterio | Qué añade | Alcance | n |
+|---|---|---|---|
+| **§15.7** — instrumentación obligatoria | Criterio-compuerta: sin latencia, tasa de error y saturación, Prueba de Dominio no superada (§6) | SIS-501, SIS-701 | **2** |
+| **§15.8** — contabilidad de costo | Requisito de acotar cómputo, memoria y —con acelerador— precio, con escalamiento declarado | 21 fichas, listadas en `METHODOLOGY.md` §15.2 | **21** |
+
+**Lectura.** Las dos asignaturas con compuerta son las de dificultad 10/10 del eje de sistemas, y ambas son de tipo **D+S**: ya exigían demostración *más* artefacto, y ahora exigen que el artefacto sea medible. El solapamiento es total: SIS-501 y SIS-701 están también entre las 21 de §15.8. La cobertura de §15.8 —21 de 39, el 54%— es consistente con la lectura de la tipología: las que quedan fuera son mayoritariamente las 11 de tipo **D**, cuyo entregable no es un programa.
+
 ---
 
 ## 30. Ruta de nivelación previa
