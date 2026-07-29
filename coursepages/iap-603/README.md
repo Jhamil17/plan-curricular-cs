@@ -23,7 +23,7 @@
 
 **Prueba de Dominio.** Demostración formal de la optimalidad de A* con heurística admisible y consistente, incluyendo el contraejemplo que muestra por qué la admisibilidad sola no basta para grafos + agente de Q-learning con convergencia demostrada al óptimo en un MDP finito donde el óptimo se calcula en forma cerrada.
 
-**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del agente y se declara su escalamiento respecto al tamaño del espacio de estados y acciones, contrastado contra la cota de complejidad de muestra derivada.
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del agente, con el escalamiento declarado respecto al tamaño del espacio de estados y acciones. El número que decide algo es el **umbral donde la tabla deja de caber y el número de episodios deja de ser alcanzable**: es exactamente lo que motiva la aproximación de funciones, y encontrarlo por medición convierte esa transición en una decisión derivada en lugar de un dogma heredado.
 
 **Bibliografía.**
 - **Base:** *Artificial Intelligence: A Modern Approach* (4ª ed.) — Russell & Norvig

@@ -23,7 +23,7 @@
 
 **Prueba de Dominio.** Router IP con tabla de enrutamiento y plano de forwarding + implementación de TCP sobre UDP en espacio de usuario, con control de congestión AIMD, retransmisión con estimación adaptativa de RTT y detección de pérdidas. Evaluado bajo pérdida, reordenamiento y latencia variable inyectadas.
 
-**Contabilidad de costo (§15.8).** Se acota cómputo y memoria por conexión y se declara su escalamiento respecto al número de flujos concurrentes y al tamaño de la tabla de enrutamiento, contrastado contra la complejidad derivada.
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria, con el escalamiento declarado respecto al número de flujos concurrentes y al tamaño de la tabla de enrutamiento. El número que decide algo es la **memoria por conexión**: multiplicada por los flujos concurrentes fija el techo de conexiones simultáneas, y es la cantidad que dimensiona la ventana de recepción y el buffer de reensamblado. Un techo que se descubre por agotamiento en producción es el techo que este criterio existe para calcular antes.
 
 **Bibliografía.**
 - **Base:** *Computer Networks: A Top-Down Approach* (8ª ed.) — Kurose & Ross

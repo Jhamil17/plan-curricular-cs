@@ -23,7 +23,7 @@
 
 **Prueba de Dominio.** Suma de prefijos paralela con análisis exacto de W(n) = O(n) y S(n) = O(log n), verificado por medición de escalabilidad + cola MPMC lock-free con demostración de linearizabilidad y con banco de pruebas de estrés bajo reordenamiento de memoria.
 
-**Contabilidad de costo (§15.8).** Se acota cómputo y memoria de ambos artefactos y se declara su escalamiento respecto al tamaño de la entrada y al número de hilos, contrastado contra las cotas W(n) y S(n) derivadas.
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria de ambos artefactos, con el escalamiento declarado respecto al tamaño de la entrada y al número de hilos. El número que decide algo es el **recuento de hilos donde la escalabilidad medida se aparta de S(n)**: ese punto de saturación acota el paralelismo útil y obliga a separar lo que es límite de Amdahl —trabajo secuencial irreducible— de lo que es contención de la cola, que sí es un defecto de implementación.
 
 **Bibliografía.**
 - **Base:** *The Art of Multiprocessor Programming* (2ª ed.) — Herlihy, Shavit, Luchangco & Spear

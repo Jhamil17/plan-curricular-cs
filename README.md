@@ -18,13 +18,13 @@ Esta versión corrige un defecto de los criterios de evaluación. No añade cont
 
 **El defecto.** El plan evaluaba sistemas distribuidos y núcleos sin exigir que fueran observables, y proyectos de cómputo ejecutable sin exigir que su costo en recursos estuviera acotado. Dicho de otro modo: una Prueba de Dominio podía aprobarse demostrando que el artefacto *funciona*, sin poder decir a qué latencia, con qué tasa de error, contra qué recurso saturado ni a qué costo. Para un plan cuyas competencias C3 y C4 son precisamente razonar cuantitativamente sobre sistemas, eso es un hueco en el instrumento de evaluación, no una omisión de temario.
 
-**La corrección.** Dos criterios nuevos en §15, que es donde vive el protocolo de Pruebas de Dominio: **§15.7 instrumentación obligatoria** —criterio-compuerta en SIS-501 y SIS-701, sujeto a la regla de no compensación de §6— y **§15.8 contabilidad de costo**, redactado como principio general y aplicado a las 21 fichas cuyo entregable es un programa cuyo costo crece con el tamaño de la entrada. La lista de las 21 se deriva del criterio y es re-derivable; las 18 que quedan fuera y la excepción de ALG-402 se declaran en §15.2 con su motivo.
+**La corrección.** Dos criterios nuevos en §15, que es donde vive el protocolo de Pruebas de Dominio: **§15.7 instrumentación obligatoria** —criterio-compuerta en SIS-501 y SIS-701, sujeto a la regla de no compensación de §6— y **§15.8 contabilidad de costo**, redactado como principio general y aplicado a las 22 fichas cuyo entregable es un programa cuyo costo crece con el tamaño de la entrada. La lista de las 22 se deriva del criterio y es re-derivable; las 17 que quedan fuera, la excepción de ALG-402 y el pendiente declarado de LEN-502 están en §15.2 con su motivo. Cada párrafo de ficha nombra la cantidad concreta que cierra una decisión de diseño: un criterio de costo que solo produce tablas de medición que nadie usa para decidir es contabilidad ritual, y §17 ya declara la presunción contra las prácticas que se sienten productivas sin serlo.
 
 **Lo que no cambió.** Ninguna tabla de carga, créditos o horas: §3.2, §3.3, §4.1, §26 y §29 están intactos y siguen siendo recalculables desde las fichas. Las unidades semanales de las 47 fichas tampoco cambian. Lo único que se añadió a las fichas es el criterio de evaluación que les faltaba.
 
 ---
 
-> Las notas de revisiones anteriores están archivadas en [`CHANGELOG.md`](CHANGELOG.md), según la convención de notas de revisión de [`CONTRIBUTING.md`](CONTRIBUTING.md). La nota de la 2026.2 —que documenta el error de 1.7× en el presupuesto de horas y su corrección— está en §35.
+> Las notas de revisiones anteriores están archivadas en el §37 de [`CHANGELOG.md`](CHANGELOG.md), según la convención de notas de revisión de [`CONTRIBUTING.md`](CONTRIBUTING.md). La nota de la 2026.2 —que documenta el error de 1.7× en el presupuesto de horas y su corrección— está en §37.1.
 
 ---
 

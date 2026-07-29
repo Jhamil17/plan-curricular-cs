@@ -23,7 +23,7 @@
 
 **Prueba de Dominio.** Demostración formal de que las operaciones de Fibonacci Heap son O(1) amortizado (extract-min O(log n)) mediante función potencial de Fibonacci, e implementación desde cero con medición que contraste la cota amortizada contra el peor caso individual.
 
-**Contabilidad de costo (§15.8).** Se acota cómputo y memoria de la estructura y se declara su escalamiento respecto al número de elementos y de operaciones, contrastado contra la cota amortizada derivada.
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria de la estructura, con el escalamiento declarado respecto al número de elementos y de operaciones. Lo que decide algo aquí **no es la cota, que ya está demostrada, sino los factores constantes**: el O(1) amortizado de `decrease-key` convive con constantes y con una huella por nodo que hacen que un heap binario gane en muchos tamaños reales de entrada. Medir dónde está ese cruce es el resultado, y es la asignatura donde la diferencia entre cota y costo se vuelve visible por primera vez.
 
 **Bibliografía.**
 - **Base:** *Introduction to Algorithms* (4ª ed., 2022) — Cormen, Leiserson, Rivest & Stein (CLRS)

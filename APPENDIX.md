@@ -208,9 +208,11 @@ La tipología de arriba clasifica las Pruebas de Dominio por **lo que entregan**
 | Criterio | Qué añade | Alcance | n |
 |---|---|---|---|
 | **§15.7** — instrumentación obligatoria | Criterio-compuerta: sin latencia, tasa de error y saturación, Prueba de Dominio no superada (§6) | SIS-501, SIS-701 | **2** |
-| **§15.8** — contabilidad de costo | Requisito de acotar cómputo, memoria y —con acelerador— precio, con escalamiento declarado | 21 fichas, listadas en `METHODOLOGY.md` §15.2 | **21** |
+| **§15.8** — contabilidad de costo | Requisito de acotar cómputo, memoria y —con acelerador— precio, con escalamiento declarado | 22 fichas, listadas en `METHODOLOGY.md` §15.2 | **22** |
 
-**Lectura.** Las dos asignaturas con compuerta son las de dificultad 10/10 del eje de sistemas, y ambas son de tipo **D+S**: ya exigían demostración *más* artefacto, y ahora exigen que el artefacto sea medible. El solapamiento es total: SIS-501 y SIS-701 están también entre las 21 de §15.8. La cobertura de §15.8 —21 de 39, el 54%— es consistente con la lectura de la tipología: las que quedan fuera son mayoritariamente las 11 de tipo **D**, cuyo entregable no es un programa.
+**Lectura.** Las dos asignaturas con compuerta son las de dificultad 10/10 del eje de sistemas, y ambas entregan demostración *más* artefacto: ya exigían las dos cosas, y ahora exigen que el artefacto sea medible. El solapamiento es total —SIS-501 y SIS-701 están también entre las 22 de §15.8.
+
+La cobertura de §15.8 es de **22 de 39, el 56%**, y su reparto es consistente con la tipología: las que quedan fuera son mayoritariamente las 11 de tipo **D**, cuyo entregable es una demostración y no un programa. El caso instructivo es el tipo **V**: de sus dos asignaturas, **LEN-701 entra y LEN-502 no**, y la diferencia no es de contenido sino de qué eje de costo se declaró. En LEN-701 el costo acotado es el de elaborar y chequear la prueba —que por Curry-Howard es la ejecución de un programa y escala con la formalización—; en LEN-502 el eje equivalente sería la explosión del espacio de estados del *model checking*, que cumple el criterio con la misma fuerza y **queda declarado como pendiente** en §15.2 en lugar de resolverse por omisión.
 
 ---
 

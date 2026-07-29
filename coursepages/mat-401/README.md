@@ -23,7 +23,7 @@
 
 **Prueba de Dominio.** Demostración de que el método acelerado de Nesterov logra O(1/k²) frente a O(1/k) del gradiente estándar + implementación de un solver de programación cuadrática con restricciones de igualdad mediante multiplicadores de Lagrange, validado contra CVXPY.
 
-**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del solver y se declara su escalamiento respecto al número de variables y restricciones, contrastado contra la complejidad derivada.
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del solver, con el escalamiento declarado respecto al número de variables y de restricciones. El número que decide algo es el **tamaño a partir del cual el sistema KKT denso deja de caber**: es la cantidad que en la práctica obliga a pasar a métodos que explotan estructura, y saberla convierte "usa un solver disperso" en una decisión derivada y no en un consejo heredado.
 
 **Bibliografía.**
 - **Base:** *Convex Optimization* — Boyd & Vandenberghe (gratuito)

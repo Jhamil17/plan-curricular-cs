@@ -4,7 +4,7 @@
 No. Es un programa de autoestudio de rigor extendido, sin acreditación institucional. Ver `EXCLUSIONS.md` para lo que deliberadamente no cubre.
 
 **¿En cuánto tiempo se completa?**
-Ver `METHODOLOGY.md` §14 (Rutas de titulación). El programa completo, tomado con integridad horaria, no cabe en 4 años — ver la nota de revisión 2026.2 en `CHANGELOG.md` §35.0.
+Ver `METHODOLOGY.md` §14 (Rutas de titulación). El programa completo, tomado con integridad horaria, no cabe en 4 años — ver la nota de revisión 2026.2 en `CHANGELOG.md` §37.1.
 
 **¿Por qué hay una capa de neurociencia en un plan curricular?**
 Porque cambia decisiones concretas de diseño (calendario, tarjetas de repaso, intercalado). Ver `METHODOLOGY.md` §9–§11, graduado por calidad de evidencia.

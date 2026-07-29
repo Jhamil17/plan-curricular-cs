@@ -23,7 +23,7 @@
 
 **Prueba de Dominio.** Demostración rigurosa del Teorema de Nyquist-Shannon desde primeros principios del análisis real. Implementación de FFT radix-2 con análisis del error de punto flotante contrastado contra la cota teórica.
 
-**Contabilidad de costo (§15.8).** Se acota cómputo y memoria de la FFT y se declara su escalamiento respecto a la longitud de la señal, contrastado contra la complejidad derivada.
+**Contabilidad de costo (§15.8).** Se cuentan las operaciones y se acota la huella, con el escalamiento declarado respecto a la longitud de la señal. El número que decide algo es el **punto de cruce medido frente a la DFT directa** O(n²): la cota dice que la FFT gana siempre, y la medición dice desde qué *n* gana de verdad, porque por debajo de ese punto los factores constantes deciden. Encontrarlo obliga a medir en vez de citar la cota.
 
 **Bibliografía.**
 - **Base:** *Principles of Mathematical Analysis* (3ª ed.) — Rudin

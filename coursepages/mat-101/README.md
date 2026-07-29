@@ -23,7 +23,7 @@
 
 **Prueba de Dominio.** Demostración formal, desde axiomas ZFC, de la correctitud del algoritmo de Euclides extendido. Construcción de un solucionador SAT por resolución proposicional con prueba de terminación y análisis de complejidad empírica contrastada contra la cota teórica.
 
-**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del solucionador y se declara su escalamiento respecto al número de variables y cláusulas, contrastado contra la complejidad derivada.
+**Contabilidad de costo (§15.8).** Se cuentan las operaciones de resolución del solucionador y se declara su escalamiento respecto al número de variables y cláusulas, contrastado contra la complejidad derivada. El número que decide algo es dónde la razón cláusulas/variables hace que el costo explote: fija el tamaño de instancia con el que se puede trabajar y conecta con el umbral de fase que INT-100 estudia. **Sin componente de memoria:** la huella se exige solo donde el plan ya entregó la jerarquía de memoria (§15.2), que aquí sería inversión de prerrequisitos.
 
 **Bibliografía.**
 - **Base:** *Mathematics for Computer Science* — Lehman, Leighton & Meyer (MIT, gratuito)

@@ -23,7 +23,7 @@
 
 **Prueba de Dominio.** Demostración formal de la correctitud del algoritmo W por inducción estructural sobre derivaciones de tipo + intérprete de λ-cálculo tipado con polimorfismo paramétrico, con verificación experimental de progreso y preservación sobre un banco de programas.
 
-**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del intérprete y se declara su escalamiento respecto al tamaño del término y al número de reducciones, contrastado contra la complejidad derivada.
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del intérprete, con el escalamiento declarado respecto al tamaño del término. El número que decide algo es el **costo comparado de las estrategias de reducción**: sobre el mismo banco de programas, orden normal y orden aplicativo difieren en número de reducciones —y en si terminan—, de modo que la medición es lo que justifica la estrategia implementada en vez de heredarla del libro. Conecta con Church-Rosser: la confluencia garantiza el mismo resultado, no el mismo costo.
 
 **Bibliografía.**
 - **Base:** *Types and Programming Languages* — Pierce (TAPL)

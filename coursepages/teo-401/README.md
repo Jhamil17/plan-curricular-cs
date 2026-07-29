@@ -23,7 +23,7 @@
 
 **Prueba de Dominio.** Demostración completa del Teorema de Codificación de Canal (existencia de códigos aleatorios que alcanzan la capacidad) + implementación de codificador y decodificador Reed-Solomon con el algoritmo de Berlekamp-Welch, medido sobre canal simulado con la brecha respecto a la capacidad cuantificada.
 
-**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del codificador y del decodificador y se declara su escalamiento respecto a la longitud del bloque y a la capacidad de corrección, contrastado contra la complejidad derivada.
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del codificador y del decodificador, con el escalamiento declarado respecto a la longitud del bloque y a la capacidad de corrección. El número que decide algo es el **costo de decodificación por símbolo corregido**: crece con la capacidad de corrección y, junto con la brecha medida respecto a la capacidad del canal, dice qué tasa de código es pagable. Es la forma de ver que el Teorema de Codificación de Canal promete existencia, no viabilidad.
 
 **Bibliografía.**
 - **Base:** *Elements of Information Theory* (2ª ed.) — Cover & Thomas
