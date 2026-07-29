@@ -208,11 +208,11 @@ La tipología de arriba clasifica las Pruebas de Dominio por **lo que entregan**
 | Criterio | Qué añade | Alcance | n |
 |---|---|---|---|
 | **§15.7** — instrumentación obligatoria | Criterio-compuerta: sin latencia, tasa de error y saturación, Prueba de Dominio no superada (§6) | SIS-501, SIS-701 | **2** |
-| **§15.8** — contabilidad de costo | Requisito de acotar cómputo, memoria y —con acelerador— precio, con escalamiento declarado | 22 fichas, listadas en `METHODOLOGY.md` §15.2 | **22** |
+| **§15.8** — contabilidad de costo | Requisito de acotar cómputo, memoria y —con acelerador— precio, con escalamiento declarado | 23 fichas, listadas en `METHODOLOGY.md` §15.2 | **23** |
 
-**Lectura.** Las dos asignaturas con compuerta son las de dificultad 10/10 del eje de sistemas, y ambas entregan demostración *más* artefacto: ya exigían las dos cosas, y ahora exigen que el artefacto sea medible. El solapamiento es total —SIS-501 y SIS-701 están también entre las 22 de §15.8.
+**Lectura.** Las dos asignaturas con compuerta son las de dificultad 10/10 del eje de sistemas, y ambas entregan demostración *más* artefacto: ya exigían las dos cosas, y ahora exigen que el artefacto sea medible. El solapamiento es total —SIS-501 y SIS-701 están también entre las 23 de §15.8.
 
-La cobertura de §15.8 es de **22 de 39, el 56%**, y su reparto es consistente con la tipología: las que quedan fuera son mayoritariamente las 11 de tipo **D**, cuyo entregable es una demostración y no un programa. El caso instructivo es el tipo **V**: de sus dos asignaturas, **LEN-701 entra y LEN-502 no**, y la diferencia no es de contenido sino de qué eje de costo se declaró. En LEN-701 el costo acotado es el de elaborar y chequear la prueba —que por Curry-Howard es la ejecución de un programa y escala con la formalización—; en LEN-502 el eje equivalente sería la explosión del espacio de estados del *model checking*, que cumple el criterio con la misma fuerza y **queda declarado como pendiente** en §15.2 en lugar de resolverse por omisión.
+La cobertura de §15.8 es de **23 de 39, el 59%**, y su reparto es consistente con la tipología. Las que quedan fuera son mayoritariamente las 11 de tipo **D**, cuyo entregable es una demostración y no un programa. El tipo **V** queda cubierto por completo —sus dos asignaturas, LEN-502 y LEN-701— y el motivo dice algo sobre el plan que la tipología no dice: **entran no por el código que extraen, sino porque chequear una prueba es ejecutar un programa** cuyo costo crece con el tamaño de la formalización o del modelo. En LEN-502 el criterio incluso condiciona el resultado en lugar de acompañarlo: una propiedad declarada verificada cuando en realidad se agotó el espacio de estados no está verificada, y distinguir un caso del otro exige haber acotado el costo.
 
 ---
 
