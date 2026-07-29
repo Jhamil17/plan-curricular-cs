@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Demostración completa del Teorema de Codificación de Canal (existencia de códigos aleatorios que alcanzan la capacidad) + implementación de codificador y decodificador Reed-Solomon con el algoritmo de Berlekamp-Welch, medido sobre canal simulado con la brecha respecto a la capacidad cuantificada.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del codificador y del decodificador y se declara su escalamiento respecto a la longitud del bloque y a la capacidad de corrección, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Elements of Information Theory* (2ª ed.) — Cover & Thomas
 - **Complementaria:** *Information Theory, Inference, and Learning Algorithms* — MacKay (gratuito) · *Essential Coding Theory* — Guruswami, Rudra & Sudan (borrador gratuito)

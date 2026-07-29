@@ -496,6 +496,32 @@ Bajar de ruta no es fracasar; es corregir una estimación. Condiciones de dispar
 4. **Inyección de fallos** en Pruebas de Dominio de perfil sistemas: crash en punto arbitrario, particiones de red, entradas adversariales. Un sistema que pasa el camino feliz no está terminado.
 5. **Post-mortem escrito** al cerrar: qué falló, por qué la primera hipótesis era incorrecta, qué transfiere al siguiente proyecto.
 6. **Predicción antes de medición.** Antes de ejecutar cualquier benchmark, se escribe el resultado esperado con su justificación analítica. El error de predicción se documenta y se explica (§9.4). Es obligatorio en todas las Pruebas de Dominio con componente de rendimiento.
+7. **Instrumentación obligatoria.** En SIS-501 y SIS-701 el artefacto debe exponer, además de funcionar, las tres señales que permiten afirmar *cómo* funciona: **latencia** —como distribución, no como media: p50 y p99—, **tasa de error** bajo la inyección de fallos del punto 4, y **saturación** del recurso que primero se agota (cola de ejecutables, ocupación del buffer, ventana de replicación pendiente). Es criterio-compuerta, no ponderación: un artefacto funcionalmente correcto que no expone las tres señales tiene la Prueba de Dominio **no superada**, con la regla de no compensación de §6 aplicada sin atenuación.
+8. **Contabilidad de costo.** Toda Prueba de Dominio cuyo entregable incluya un programa escrito y ejecutado por el estudiante, y cuyo costo de ejecución varíe con el tamaño de la entrada, debe acotar ese costo y declarar su escalamiento: **cómputo** (operaciones o FLOPs, contados analíticamente y medidos), **memoria** (pico y huella en función de *n*), y —donde el artefacto se entrene o se sirva sobre acelerador— **precio**, tomado del precio publicado por GPU-hora del proveedor citado y usado como constante declarada. El escalamiento se contrasta contra la complejidad ya demostrada en la misma Prueba de Dominio: una discrepancia entre costo medido y costo derivado es un error en la derivación o en la implementación, y se resuelve antes de entregar, no se anota como ruido experimental.
+
+### 15.1 Alcance del punto 7
+
+Las tres señales del punto 7 son las de Beyer et al. (*SRE*, cap. 6) y el método USE de Gregg. Se adoptan como **instrumento de medición de un artefacto evaluable**, no como práctica de operación de un servicio: la distinción es la que §34 acota explícitamente, y es la misma que el plan ya aplica a la inyección de fallos desde la 2026.2 —técnica de la ingeniería de fiabilidad usada como método de evaluación, sin importar el resto de la disciplina.
+
+**Por qué es compuerta y no ponderación.** Un núcleo o una implementación de Raft de los que solo se puede afirmar que son correctos por ausencia de fallo observado es un sistema sobre el cual no se puede razonar cuantitativamente. Las competencias C3 y C4 (§2) que estas dos asignaturas acreditan son precisamente las de razonar sobre sistemas de bajo nivel y sobre distribución con modelos de falla; un artefacto no instrumentado no evidencia esa competencia, la deja indecidible. Por eso no puede compensarse con nota alta en los demás instrumentos.
+
+### 15.2 Alcance del punto 8 — fichas afectadas
+
+La lista se **deriva** del criterio del punto 8 aplicado a las 39 Pruebas de Dominio, y es re-derivable por cualquier lector: se incluye una ficha si y solo si su entregable contiene un programa propio cuyo costo de ejecución crece con el tamaño de la entrada.
+
+| Área | Fichas afectadas |
+|---|---|
+| MAT | MAT-101, MAT-102, MAT-103, MAT-401 |
+| SIS | SIS-101, SIS-201, SIS-203, SIS-501, SIS-502, SIS-503, SIS-701, SIS-702 |
+| ALG | ALG-201, ALG-403 |
+| LEN | LEN-201, LEN-501 |
+| TEO | TEO-401, TEO-601 |
+| IAP | IAP-602, IAP-603, IAP-801 |
+| | **21 de 39** |
+
+**Las 18 restantes quedan fuera por el criterio, no por omisión.** Los tres motivos, cada uno verificable contra la ficha: (a) el entregable es una demostración y la ejecución, cuando existe, solo la verifica —MAT-104, MAT-301, MAT-601, TEO-301, TEO-302, TEO-303, ALG-401, ALG-801, IAP-601, SEG-701; (b) el entregable es una verificación mecanizada o un artefacto de investigación, con instrumento propio —LEN-502, LEN-701, INV-801, INV-802; (c) el artefacto es ejecutable pero su costo **no** es función del tamaño de la entrada, porque opera sobre una entrada de tamaño fijo: MAT-302 (MixColumns sobre estado 4×4), SIS-202 (circuito sintetizado, cuyo presupuesto es área y camino crítico), SEG-702 (cadena ROP contra un binario dado).
+
+**Excepción declarada.** **ALG-402 queda fuera** pese a que su Prueba de Dominio implementa el algoritmo de Karger y su costo sí escala con *n*. El motivo es de carga, no de contenido: es perfil teórico con carga `4–2–0` —cero horas de laboratorio— y su entregable evaluable es la cota de probabilidad de éxito, no un artefacto desplegable. Exigirle contabilidad de costo de infraestructura obligaría a añadirle un componente de cómputo que la ficha no declara, y eso alteraría el presupuesto de §3.2. Se declara aquí, como el plan declara la excepción de créditos de INV-801/802 en §3.1, en lugar de resolverse en silencio.
 
 ---
 

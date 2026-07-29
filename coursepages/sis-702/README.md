@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Multiplicación de matrices densa (GEMM) en CUDA que alcance ≥90% de la eficiencia del roofline teórico de la GPU disponible, mediante uso de memoria compartida, vectorización y ocultamiento de latencia. Cada paso de optimización documentado con medición antes/después y explicación causal desde el modelo.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo (FLOPs contados y medidos), memoria y **precio por GPU-hora** del proveedor citado como constante declarada, y se declara el escalamiento del costo respecto a la dimensión de la matriz, contrastado contra el techo del roofline.
+
 **Bibliografía.**
 - **Base:** *Programming Massively Parallel Processors* (4ª ed.) — Kirk, Hwu & El Hajj
 - **Complementaria:** *Computer Architecture: A Quantitative Approach* (6ª ed.) — Hennessy & Patterson · *Performance Analysis and Tuning on Modern CPUs* — Bakhvalov (gratuito)

@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Demostración formal de que las operaciones de Fibonacci Heap son O(1) amortizado (extract-min O(log n)) mediante función potencial de Fibonacci, e implementación desde cero con medición que contraste la cota amortizada contra el peor caso individual.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria de la estructura y se declara su escalamiento respecto al número de elementos y de operaciones, contrastado contra la cota amortizada derivada.
+
 **Bibliografía.**
 - **Base:** *Introduction to Algorithms* (4ª ed., 2022) — Cormen, Leiserson, Rivest & Stein (CLRS)
 - **Complementaria:** *Advanced Data Structures* — Brass · *Purely Functional Data Structures* — Okasaki

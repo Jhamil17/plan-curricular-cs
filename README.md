@@ -1,6 +1,6 @@
 # Ciencias de la Computación — Programa de Rigor Extendido
 
-🎓 Currículo autodiseñado de nivel bachiller + licenciatura en Ciencias de la Computación, con orientación a teoría, sistemas y métodos formales. Versión **2026.2**.
+🎓 Currículo autodiseñado de nivel bachiller + licenciatura en Ciencias de la Computación, con orientación a teoría, sistemas y métodos formales. Versión **2026.3**.
 
 Este repositorio replica el formato de [ossu/computer-science](https://github.com/ossu/computer-science) — índice navegable con una ficha (README propio) por asignatura, tabla de prerrequisitos y changelog versionado — pero con contenido, metodología y sistema de evaluación propios. No es una copia del currículo de OSSU; ver [`RESOURCES.md`](RESOURCES.md) para dónde sí se apoya en cursos de OSSU y otras fuentes abiertas.
 
@@ -8,7 +8,19 @@ Este repositorio replica el formato de [ossu/computer-science](https://github.co
 
 # PLAN CURRICULAR
 ## Ciencias de la Computación — Programa de Rigor Extendido
-### Versión 2026.2
+### Versión 2026.3
+
+---
+
+## Nota de la revisión 2026.3
+
+Esta versión corrige un defecto de los criterios de evaluación. No añade contenido, no crea asignaturas y no altera la carga horaria: las 47 unidades, los 201 créditos y las ≈11 300 horas de la 2026.2 quedan idénticos.
+
+**El defecto.** El plan evaluaba sistemas distribuidos y núcleos sin exigir que fueran observables, y proyectos de cómputo ejecutable sin exigir que su costo en recursos estuviera acotado. Dicho de otro modo: una Prueba de Dominio podía aprobarse demostrando que el artefacto *funciona*, sin poder decir a qué latencia, con qué tasa de error, contra qué recurso saturado ni a qué costo. Para un plan cuyas competencias C3 y C4 son precisamente razonar cuantitativamente sobre sistemas, eso es un hueco en el instrumento de evaluación, no una omisión de temario.
+
+**La corrección.** Dos criterios nuevos en §15, que es donde vive el protocolo de Pruebas de Dominio: **§15.7 instrumentación obligatoria** —criterio-compuerta en SIS-501 y SIS-701, sujeto a la regla de no compensación de §6— y **§15.8 contabilidad de costo**, redactado como principio general y aplicado a las 21 fichas cuyo entregable es un programa cuyo costo crece con el tamaño de la entrada. La lista de las 21 se deriva del criterio y es re-derivable; las 18 que quedan fuera y la excepción de ALG-402 se declaran en §15.2 con su motivo.
+
+**Lo que no cambió.** Ninguna tabla de carga, créditos o horas: §3.2, §3.3, §4.1, §26 y §29 están intactos y siguen siendo recalculables desde las fichas. Las unidades semanales de las 47 fichas tampoco cambian. Lo único que se añadió a las fichas es el criterio de evaluación que les faltaba.
 
 ---
 
@@ -420,7 +432,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [`VERIFICATION.md`](VERIFICATION.md) | Estado de verificación de fuentes primarias |
 | [`REFERENCES.md`](REFERENCES.md) | Bibliografía completa por capa |
 | [`EXCLUSIONS.md`](EXCLUSIONS.md) | Qué queda fuera del programa y por qué |
-| [`CHANGELOG.md`](CHANGELOG.md) | Registro de cambios 2026.1 → 2026.2 |
+| [`CHANGELOG.md`](CHANGELOG.md) | Registro de cambios 2026.1 → 2026.2 → 2026.3 |
 | [`FAQ.md`](FAQ.md) | Preguntas frecuentes |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Cómo evoluciona este documento |
 

@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Demostración rigurosa del Teorema de Nyquist-Shannon desde primeros principios del análisis real. Implementación de FFT radix-2 con análisis del error de punto flotante contrastado contra la cota teórica.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria de la FFT y se declara su escalamiento respecto a la longitud de la señal, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Principles of Mathematical Analysis* (3ª ed.) — Rudin
 - **Complementaria:** *Understanding Analysis* — Abbott (puente pedagógico hacia Rudin) · *Numerical Methods for Engineers* — Chapra & Canale

@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Motor de base de datos completo desde cero (referencia: BusTub de CMU) con buffer pool manager, tabla hash extensible, índice B+Tree concurrente, motor de ejecución con join y agregación, control de concurrencia por 2PL y recuperación ARIES. Validado con inyección de crash en punto arbitrario y verificación de serializabilidad sobre historias generadas.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del motor y se declara su escalamiento respecto al tamaño de la relación y al número de transacciones concurrentes, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Database Internals* — Alex Petrov
 - **Complementaria:** *Database System Concepts* (7ª ed.) — Silberschatz, Korth & Sudarshan · *Readings in Database Systems* ("Red Book", 5ª ed., gratuito) · *Transaction Processing* — Gray & Reuter

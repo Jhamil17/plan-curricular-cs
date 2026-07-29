@@ -25,6 +25,10 @@
 
 **Prueba de Dominio.** Núcleo minimalista completo (base xv6 o PintOS) con: planificador de hilos reales, memoria virtual con paginación y COW, y sistema de archivos con journaling. Sometido a inyección de fallos por corte de energía simulado en punto arbitrario, con análisis formal de ausencia de deadlock en la jerarquía de bloqueos.
 
+**Instrumentación obligatoria (§15.7).** El núcleo debe exponer latencia de la llamada al sistema como distribución (p50 y p99), tasa de error bajo la inyección de fallos, y saturación del recurso que primero se agota —longitud de la cola de ejecutables, presión de marcos libres, profundidad de la cola de journaling. **Criterio-compuerta:** un núcleo funcionalmente correcto que no expone las tres señales tiene la Prueba de Dominio no superada (§6).
+
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del núcleo —coste del cambio de contexto, huella de las tablas de páginas en función del espacio direccionado— y se declara su escalamiento respecto al tamaño de la carga, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Operating Systems: Three Easy Pieces* — Arpaci-Dusseau & Arpaci-Dusseau (gratuito) + código fuente comentado de xv6
 - **Complementaria:** *Lions' Commentary on UNIX 6th Edition* · *Understanding the Linux Kernel* — Bovet & Cesati · *Operating Systems: Principles and Practice* — Anderson & Dahlin

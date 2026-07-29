@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Demostración formal, desde axiomas ZFC, de la correctitud del algoritmo de Euclides extendido. Construcción de un solucionador SAT por resolución proposicional con prueba de terminación y análisis de complejidad empírica contrastada contra la cota teórica.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del solucionador y se declara su escalamiento respecto al número de variables y cláusulas, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Mathematics for Computer Science* — Lehman, Leighton & Meyer (MIT, gratuito)
 - **Complementaria:** *Discrete Mathematics and Its Applications* — Rosen · *How to Prove It* — Velleman

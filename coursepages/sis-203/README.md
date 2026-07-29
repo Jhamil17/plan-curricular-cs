@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Buffer pool manager con política LRU-K y extendible hashing para un motor de base de datos minimalista (estilo BusTub, CMU DB Group), evaluado contra trazas reales de acceso y contra la cota OPT.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del buffer pool y se declara su escalamiento respecto al tamaño de la traza y al número de marcos, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Operating Systems: Three Easy Pieces* — Arpaci-Dusseau & Arpaci-Dusseau (OSTEP, gratuito), partes de virtualización y persistencia
 - **Complementaria:** *Database Internals* — Petrov (capítulos de almacenamiento)

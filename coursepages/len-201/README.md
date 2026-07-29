@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Demostración formal de la correctitud del algoritmo W por inducción estructural sobre derivaciones de tipo + intérprete de λ-cálculo tipado con polimorfismo paramétrico, con verificación experimental de progreso y preservación sobre un banco de programas.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del intérprete y se declara su escalamiento respecto al tamaño del término y al número de reducciones, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Types and Programming Languages* — Pierce (TAPL)
 - **Complementaria:** *Practical Foundations for Programming Languages* (2ª ed.) — Harper · *The Formal Semantics of Programming Languages* — Winskel

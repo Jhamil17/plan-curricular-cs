@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Demostración de que el método acelerado de Nesterov logra O(1/k²) frente a O(1/k) del gradiente estándar + implementación de un solver de programación cuadrática con restricciones de igualdad mediante multiplicadores de Lagrange, validado contra CVXPY.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del solver y se declara su escalamiento respecto al número de variables y restricciones, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Convex Optimization* — Boyd & Vandenberghe (gratuito)
 - **Complementaria:** *Numerical Optimization* — Nocedal & Wright · *Lectures on Convex Optimization* — Nesterov · *First-Order Methods in Optimization* — Beck
