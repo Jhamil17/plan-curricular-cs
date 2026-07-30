@@ -323,7 +323,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 |---|---|---|---|---|
 | [MAT-101 — Matemáticas Discretas y Lógica Formal](coursepages/mat-101/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 10 · **16 h/sem** | ∅ | MIT 6.1200[J] *(ex 6.042)* · UC Berkeley CS70 |
 | [MAT-102 — Álgebra Lineal Computacional](coursepages/mat-102/README.md) **[NÚCLEO]** | 4 | 3–2–0 / 9 · **14 h/sem** | ∅ | MIT 18.06 (Strang) |
-| [MAT-103 — Cálculo y Análisis Real para Computación](coursepages/mat-103/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | ∅ | MIT 18.100 |
+| [MAT-103 — Cálculo y Análisis Real para Computación](coursepages/mat-103/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | ∅ | MIT 18.100A/B |
 | [MAT-104 — Probabilidad y Procesos Estocásticos](coursepages/mat-104/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 10 · **16 h/sem** | ∅ | MIT 6.3700 *(ex 6.041)* · UC Berkeley EECS 126 · Harvard Stat 110 |
 | [SIS-101 — Programación Científica y Sistemas](coursepages/sis-101/README.md) **[NÚCLEO]** | 4 | 2–0–4 / 8 · **14 h/sem** | ∅ | CMU 15-122 · MIT 6.1010 *(ex 6.009)* |
 | [INT-100 — Laboratorio Integrador I](coursepages/int-100/README.md) | 3 | 0–0–4 / 6 · **10 h/sem** | MAT-101, SIS-101 (concurrentes) | — |
@@ -336,7 +336,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [SIS-202 — Circuitos Digitales y Diseño Lógico](coursepages/sis-202/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | MAT-101 | MIT 6.1910 *(ex 6.004)* · CMU 18-240 |
 | [LEN-201 — Lenguajes de Programación y Semántica](coursepages/len-201/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 10 · **16 h/sem** | MAT-101, SIS-101 | CMU 15-150, 15-312 · MIT 6.820 |
 | [ALG-201 — Estructuras de Datos Fundamentales](coursepages/alg-201/README.md) **[NÚCLEO]** | 5 | 3–2–2 / 9 · **16 h/sem** | MAT-101, MAT-104, SIS-101 | MIT 6.1210 *(ex 6.006)* · CMU 15-210 |
-| [SIS-203 — Arquitectura de Memoria y Almacenamiento](coursepages/sis-203/README.md) | 4 | 3–0–2 / 9 · **14 h/sem** | SIS-101 | CMU 15-445 (fundamentos de almacenamiento) · Stanford CS145 |
+| [SIS-203 — Arquitectura de Memoria y Almacenamiento](coursepages/sis-203/README.md) | 4 | 3–0–2 / 9 · **14 h/sem** | SIS-101 | MIT 6.1810 · CMU 15-445 (fundamentos de almacenamiento) · Stanford CS145 |
 | [INT-200 — Laboratorio Integrador II](coursepages/int-200/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | SIS-201, SIS-202, LEN-201 (concurrentes) | — |
 
 ### Ciclo III — Teoría y Formalismo
@@ -357,7 +357,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [ALG-401 — Diseño y Análisis de Algoritmos](coursepages/alg-401/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 11 · **17 h/sem** | ALG-201, MAT-104 | MIT 6.1220[J] / 18.410[J] *(ex 6.046)* |
 | [ALG-402 — Algoritmos Avanzados y Geometría Computacional](coursepages/alg-402/README.md) | 5 | 4–2–0 / 12 · **18 h/sem** | ALG-401 (concurrente permitido) | MIT 6.5210[J] / 18.415[J] *(ex 6.854, Karger)* · Stanford CS261 |
 | [MAT-401 — Álgebra Lineal Numérica y Optimización](coursepages/mat-401/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 11 · **17 h/sem** | MAT-102, MAT-103 | Stanford EE364A/B (Boyd) · MIT 18.085 |
-| [ALG-403 — Computación Paralela y Distribuida](coursepages/alg-403/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | ALG-201, SIS-201 | CMU 15-210 · Stanford CS149 · MIT 6.106 *(ex 6.172)* |
+| [ALG-403 — Computación Paralela y Distribuida](coursepages/alg-403/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | ALG-201, SIS-201 | CMU 15-210 · Stanford CS149 · MIT 6.1060 *(ex 6.172)* |
 | [TEO-401 — Teoría de la Información y Códigos](coursepages/teo-401/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | MAT-104, MAT-302 | MIT 6.441[J] · Stanford EE376A |
 | [INT-400 — Laboratorio Integrador IV](coursepages/int-400/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | ALG-403, TEO-401, MAT-302 (concurrentes) | — |
 
@@ -369,7 +369,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [LEN-501 — Diseño de Compiladores](coursepages/len-501/README.md) **[NÚCLEO]** | 5 | 3–0–4 / 11 · **18 h/sem** | LEN-201, TEO-301, SIS-201 | Stanford CS143 · CMU 15-411 |
 | [SIS-502 — Redes de Computadoras: Protocolos y Arquitectura](coursepages/sis-502/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | SIS-201, MAT-104 | Stanford CS144 · MIT 6.829 |
 | [SIS-503 — Bases de Datos: Motores e Internals](coursepages/sis-503/README.md) **[NÚCLEO]** | 5 | 3–0–4 / 11 · **18 h/sem** | SIS-203, ALG-201 | CMU 15-445 / 645 (Andrew Pavlo) |
-| [LEN-502 — Verificación Formal y Métodos Formales](coursepages/len-502/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | LEN-201, TEO-303 | CMU 15-414 · MIT 6.820 |
+| [LEN-502 — Verificación Formal y Métodos Formales](coursepages/len-502/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | LEN-201, TEO-303 | CMU 15-414 · MIT 6.5110 |
 | [INT-500 — Laboratorio Integrador V](coursepages/int-500/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | SIS-501, LEN-501, LEN-502 (concurrentes) | — |
 
 ### Ciclo VI — IA y Aprendizaje
@@ -379,7 +379,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [IAP-601 — Fundamentos Matemáticos del Aprendizaje Automático](coursepages/iap-601/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 11 · **17 h/sem** | MAT-104, MAT-401, ALG-401 | Stanford CS229 · UC Berkeley CS189 — vertiente teórica |
 | [IAP-602 — Redes Neuronales Profundas: Teoría y Arquitecturas](coursepages/iap-602/README.md) **[NÚCLEO]** | 5 | 3–0–4 / 11 · **18 h/sem** | IAP-601 (concurrente permitido) | Stanford CS231N y CS224N · MIT 6.S191 |
 | [IAP-603 — Inteligencia Artificial: Búsqueda, Planificación y Razonamiento](coursepages/iap-603/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | MAT-104, ALG-401 | UC Berkeley CS188 · Stanford CS221 — vertiente teórica |
-| [TEO-601 — Computación Cuántica: Teoría y Algoritmos](coursepages/teo-601/README.md) | 5 | 4–2–0 / 11 · **17 h/sem** | MAT-102, MAT-302, TEO-302 | MIT 8.370[J] / 18.435[J] · UC Berkeley CS294 |
+| [TEO-601 — Computación Cuántica: Teoría y Algoritmos](coursepages/teo-601/README.md) | 5 | 4–2–0 / 11 · **17 h/sem** | MAT-102, MAT-302, TEO-302 | MIT 8.370[J] / 18.435[J] |
 | [MAT-601 — Geometría Diferencial y Álgebra Tensorial para Aprendizaje](coursepages/mat-601/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | MAT-103, MAT-401 | Stanford CS468 · MIT 18.950 |
 | [INT-600 — Laboratorio Integrador VI](coursepages/int-600/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | IAP-602, MAT-601 (concurrentes) | — |
 
@@ -391,7 +391,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [SIS-701 — Sistemas Distribuidos: Teoría y Construcción](coursepages/sis-701/README.md) **[NÚCLEO]** | 5 | 3–0–4 / 11 · **18 h/sem** | SIS-501, SIS-502, ALG-403 | MIT 6.5840 *(ex 6.824)* · CMU 15-440 |
 | [SEG-702 — Seguridad de Sistemas y Ataques a Bajo Nivel](coursepages/seg-702/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | SIS-201, SIS-501 | CMU 15-330 · UC Berkeley CS161 · Stanford CS155 |
 | [LEN-701 — Tipos Dependientes y Verificación Mecanizada](coursepages/len-701/README.md) | 5 | 3–2–2 / 10 · **17 h/sem** | LEN-201, LEN-502, TEO-303 | CMU 15-317 y 15-819 · MIT 6.826 |
-| [SIS-702 — Computación de Alto Rendimiento y Arquitecturas Especializadas](coursepages/sis-702/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | ALG-403, SIS-201 | Stanford CS315A · MIT 6.106 *(ex 6.172)* · CMU 15-418/618 |
+| [SIS-702 — Computación de Alto Rendimiento y Arquitecturas Especializadas](coursepages/sis-702/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | ALG-403, SIS-201 | Stanford CS315A · MIT 6.1060 *(ex 6.172)* · CMU 15-418/618 |
 | [INT-700 — Laboratorio Integrador VII](coursepages/int-700/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | SEG-701, SIS-701, SIS-702 (concurrentes) | — |
 
 ### Ciclo VIII — Frontera y Síntesis

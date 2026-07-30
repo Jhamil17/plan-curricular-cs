@@ -193,7 +193,15 @@ Los defectos 1 a 3 no son independientes. **MIT renumeró EECS en 2022 y el plan
 
 **Ninguna cifra del plan.** §3.2, §3.3, §4.1, §26 y §29 están **intactos**. Tampoco cambian los pesos de §7, las unidades semanales de ninguna ficha, la bibliografía, los recursos, los protocolos de estudio, las Pruebas de Dominio ni las rutas de §14.
 
-**Seis líneas modificadas en total**, una por ficha, todas en el campo `ADN institucional`. Es la revisión de menor superficie del plan.
+**Superficie de la revisión:** dieciséis líneas, todas de citación. Seis en el campo `ADN institucional` de las fichas, dos en el campo `Recursos` de ALG-403 y SIS-702 —que también citaban `6.106`— y **seis en las tablas de malla curricular del `README.md`**, por lo que sigue.
+
+### 38.5 Hallazgo de proceso: el campo ADN está duplicado
+
+**Toda corrección de ADN debe aplicarse dos veces.** El campo vive en dos lugares: la ficha en `coursepages/<código>/README.md` y la fila correspondiente de la malla curricular del `README.md`. Y en algunas fichas aparece **una tercera vez** en su campo `Recursos`, como ocurría con `6.106` en ALG-403 y SIS-702.
+
+Se registra porque en esta misma revisión el primer intento corrigió solo las fichas, y durante unos minutos el plan tuvo seis fichas contradiciendo a su propio índice. La auditoría de §39 tampoco lo había señalado: sus recomendaciones de remediación decían «corregir el campo ADN» sin advertir que hay dos o tres copias.
+
+**Regla que queda establecida:** una corrección de ADN no está completa hasta que `grep -rn "<código viejo>"` sobre todo el repositorio devuelve vacío, salvo en las menciones históricas de `CHANGELOG.md` y `VERIFICATION.md`, que deben conservar el número viejo por trazabilidad.
 
 ---
 
