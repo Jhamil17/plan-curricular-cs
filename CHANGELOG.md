@@ -137,6 +137,64 @@ Esta versión corrige un defecto estructural de la 2026.1 y añade tres capas nu
 
 **Honestidad sobre esta revisión.** La aritmética de horas (§3.2, §26) es verificable y se puede recalcular desde las fichas. Los mecanismos neurobiológicos de §9–§11 están graduados por calidad de evidencia (`■■■` a `■□□`): parte de esa literatura es robusta y replicada, parte es extrapolación de modelos animales, y se señala cuál es cuál. No se declara como establecido nada que no lo esté.
 
+### 37.2 Nota de la revisión 2026.3 · vigente el 29/07/2026
+
+> **Caso de borde de la convención:** la 2026.3 fue sustituida el mismo día en que se publicó, así que su ventana de vigencia es de un solo día en lugar de un rango. El formato `del DD/MM al DD/MM` de `CONTRIBUTING.md` no contemplaba esto; se registra como `vigente el DD/MM`.
+
+Esta versión corrige un defecto de los criterios de evaluación. No añade contenido, no crea asignaturas y no altera la carga horaria: las 47 unidades, los 201 créditos y las ≈11 300 horas de la 2026.2 quedan idénticos.
+
+**El defecto.** El plan evaluaba sistemas distribuidos y núcleos sin exigir que fueran observables, y proyectos de cómputo ejecutable sin exigir que su costo en recursos estuviera acotado. Dicho de otro modo: una Prueba de Dominio podía aprobarse demostrando que el artefacto *funciona*, sin poder decir a qué latencia, con qué tasa de error, contra qué recurso saturado ni a qué costo. Para un plan cuyas competencias C3 y C4 son precisamente razonar cuantitativamente sobre sistemas, eso es un hueco en el instrumento de evaluación, no una omisión de temario.
+
+**La corrección.** Dos criterios nuevos en §15, que es donde vive el protocolo de Pruebas de Dominio: **§15.7 instrumentación obligatoria** —criterio-compuerta en SIS-501 y SIS-701, sujeto a la regla de no compensación de §6— y **§15.8 contabilidad de costo**, redactado como principio general y aplicado a las 23 fichas cuyo entregable es un programa cuyo costo crece con el tamaño de la entrada. La lista de las 23 se deriva del criterio y es re-derivable; las 16 que quedan fuera y la excepción declarada de ALG-402 están en §15.2 con su motivo. Cada párrafo de ficha nombra la cantidad concreta que cierra una decisión de diseño: un criterio de costo que solo produce tablas de medición que nadie usa para decidir es contabilidad ritual, y §17 ya declara la presunción contra las prácticas que se sienten productivas sin serlo.
+
+**Lo que no cambió.** Ninguna tabla de carga, créditos o horas: §3.2, §3.3, §4.1, §26 y §29 están intactos y siguen siendo recalculables desde las fichas. Las unidades semanales de las 47 fichas tampoco cambian. Lo único que se añadió a las fichas es el criterio de evaluación que les faltaba.
+
 ---
 
-**Fin del documento.** Versión 2026.3 · 29 de julio de 2026 · 39 asignaturas + 7 laboratorios integradores + 1 optativa · 201 créditos · ≈11 300 horas · 8 ciclos de contenido · 6 rutas de titulación.
+## 38. Registro de cambios: 2026.3 → 2026.4
+
+Revisión **motivada por defecto**, en el sentido del punto 1 del proceso de versionado de `CONTRIBUTING.md`. Los defectos están en las fichas mismas —citas a asignaturas que no existen—, lo que habilita su modificación bajo el punto 3.
+
+**Alcance deliberadamente estrecho.** Esta revisión aplica **solo las correcciones mecánicas y verificadas** de la auditoría de §39. Los hallazgos que exigen decisión de contenido quedan abiertos como issues y **no se tocan aquí**.
+
+### 38.1 Corrección de defecto
+
+| # | Sección | Defecto en 2026.3 | Corrección |
+|---|---|---|---|
+| 1 | Fichas de ALG-403 y SIS-702 | `MIT 6.106` **no existe** — dígito faltante | → **`6.1060`** «Software Performance Engineering», 18u, pregrado, instructores Amarasinghe y **Leiserson**, autor de Cilk, lo que respalda la U1 de ALG-403. **Una corrección, dos fichas** |
+| 2 | Ficha de LEN-502 | `MIT 6.820` **no existe** | → **`6.5110`** «Foundations of Program Analysis», que además **cubre model checking e interpretación abstracta**, las unidades 2 y 5 de la ficha que hasta ahora no tenían fuente porque CMU 15-414 usa Why3 |
+| 3 | Ficha de MAT-103 | `MIT 18.100` **no existe sin sufijo**; el catálogo solo tiene 18.100A, B, P y Q | → **`18.100A/B`**, que además **elimina una autocontradicción interna**: el campo Recursos de la ficha ya decía «MIT OCW 18.100A/B» |
+| 4 | Ficha de SIS-203 | Las unidades 1–2 son memoria virtual, TLB y tablas PML4, y su única fuente —CMU 15-445— es un curso de bases de datos que **no cubre memoria virtual en ninguna parte** | Añadido **`MIT 6.1810`** «Operating System Engineering», que sí la cubre. Ya estaba en el plan: es el ADN de SIS-501 |
+| 5 | Ficha de TEO-601 | `UC Berkeley CS294` **no es un curso**: es el número genérico «Special Topics», *«topics will vary from semester to semester»*, con secciones simultáneas y sílabos independientes | **Retirado.** Queda 8.370[J]/18.435[J], verificado con emparejamiento exacto e instructores Chuang, Harrow y Shor |
+
+### 38.2 La causa raíz, declarada
+
+Los defectos 1 a 3 no son independientes. **MIT renumeró EECS en 2022 y el plan migró parte de sus citas y dejó el resto**, con evidencia simétrica documentada en §39.2: los diez números que el plan cita en esquema nuevo existen todos, y los cinco que cita en esquema antiguo están todos muertos.
+
+**Regla de prevención que esta revisión deja establecida:** todo `6.xxx` de tres dígitos y todo `6.Sxxx` es sospechoso por defecto y debe verificarse contra catálogo antes de publicarse. Es un barrido por formato, más barato que auditar ficha por ficha, y detecta la clase entera de error.
+
+### 38.3 Lo que esta revisión NO corrige, y por qué
+
+§39 documenta 39 hallazgos; esta revisión resuelve ocho. Los siguientes **quedan abiertos deliberadamente** porque exigen decisión de contenido, no corrección tipográfica:
+
+| Caso | Motivo de exclusión | Issue |
+|---|---|---|
+| Retirar CS294 de **ALG-801** | La deja con **cero fuentes**: 6.890 también está muerto. Convertir una cita falsa en un vacío declarado es una decisión sobre una ficha de dificultad 10 | #4 |
+| `6.820` → `6.5110` en **LEN-201** | 6.5110 es análisis de programas; la ficha es λ-cálculo y Curry-Howard. Sustitución de dominio equivocado | #5 |
+| Añadir 6.1220 a **ALG-201** | **Cierre parcial**: 6.1220 lista *heaps* y análisis amortizado pero no nombra Fibonacci heaps | #6 |
+| Añadir 6.1910 a **SIS-201** | **Cierre parcial**: lista procesador segmentado pero no predicción de saltos ni ejecución especulativa | — |
+| Añadir CS336 a **IAP-602** | **Cierre parcial**: cubre MoE pero no S4/Mamba ni atención lineal | — |
+| Declarar la brecha de **TEO-601** | Requiere elegir entre cuatro opciones, incluida nivelación en §30 | #8 |
+| `6.441`, `6.826`, `6.829`, `6.890`, `6.S965` | **Sin sucesor identificado.** Requieren el crosswalk de renumeración de MIT EECS | #9 |
+
+**Presentar un cierre parcial como resuelto sería exactamente la sobreafirmación que §39 documenta.** Los tres casos parciales mejoran el anclaje sin cerrarlo, y por eso esperan.
+
+### 38.4 Lo que no cambió
+
+**Ninguna cifra del plan.** §3.2, §3.3, §4.1, §26 y §29 están **intactos**. Tampoco cambian los pesos de §7, las unidades semanales de ninguna ficha, la bibliografía, los recursos, los protocolos de estudio, las Pruebas de Dominio ni las rutas de §14.
+
+**Seis líneas modificadas en total**, una por ficha, todas en el campo `ADN institucional`. Es la revisión de menor superficie del plan.
+
+---
+
+**Fin del documento.** Versión 2026.4 · 29 de julio de 2026 · 39 asignaturas + 7 laboratorios integradores + 1 optativa · 201 créditos · ≈11 300 horas · 8 ciclos de contenido · 6 rutas de titulación.

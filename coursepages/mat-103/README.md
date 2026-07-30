@@ -7,7 +7,7 @@
 | **Dificultad** | 7/10 |
 | **Perfil de evaluación** | Teórico |
 | **Prerrequisitos** | ∅ |
-| **ADN institucional** | MIT 18.100 |
+| **ADN institucional** | MIT 18.100A/B |
 
 **Competencia terminal.** Redacta demostraciones ε-δ completas y aplica análisis real al fundamento de los métodos numéricos y del procesamiento de señales.
 

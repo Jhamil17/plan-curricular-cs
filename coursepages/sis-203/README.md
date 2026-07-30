@@ -7,7 +7,7 @@
 | **Dificultad** | 8/10 |
 | **Perfil de evaluación** | Sistemas |
 | **Prerrequisitos** | SIS-101 |
-| **ADN institucional** | CMU 15-445 (fundamentos de almacenamiento) · Stanford CS145 |
+| **ADN institucional** | MIT 6.1810 · CMU 15-445 (fundamentos de almacenamiento) · Stanford CS145 |
 
 **Competencia terminal.** Diseña la capa de almacenamiento de un sistema con conocimiento explícito del costo real de cada nivel de la jerarquía.
 

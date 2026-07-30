@@ -1,6 +1,6 @@
 # Ciencias de la Computación — Programa de Rigor Extendido
 
-🎓 Currículo autodiseñado de nivel bachiller + licenciatura en Ciencias de la Computación, con orientación a teoría, sistemas y métodos formales. Versión **2026.3**.
+🎓 Currículo autodiseñado de nivel bachiller + licenciatura en Ciencias de la Computación, con orientación a teoría, sistemas y métodos formales. Versión **2026.4**.
 
 Este repositorio replica el formato de [ossu/computer-science](https://github.com/ossu/computer-science) — índice navegable con una ficha (README propio) por asignatura, tabla de prerrequisitos y changelog versionado — pero con contenido, metodología y sistema de evaluación propios. No es una copia del currículo de OSSU; ver [`RESOURCES.md`](RESOURCES.md) para dónde sí se apoya en cursos de OSSU y otras fuentes abiertas.
 
@@ -8,23 +8,23 @@ Este repositorio replica el formato de [ossu/computer-science](https://github.co
 
 # PLAN CURRICULAR
 ## Ciencias de la Computación — Programa de Rigor Extendido
-### Versión 2026.3
+### Versión 2026.4
 
 ---
 
-## Nota de la revisión 2026.3
+## Nota de la revisión 2026.4
 
-Esta versión corrige un defecto de los criterios de evaluación. No añade contenido, no crea asignaturas y no altera la carga horaria: las 47 unidades, los 201 créditos y las ≈11 300 horas de la 2026.2 quedan idénticos.
+Esta versión corrige defectos de **citación**, no de contenido. No añade ni retira temario, no crea asignaturas y no altera carga horaria: las 47 unidades, los 201 créditos y las ≈11 300 horas quedan idénticos. Lo único que cambia son seis líneas del campo `ADN institucional`.
 
-**El defecto.** El plan evaluaba sistemas distribuidos y núcleos sin exigir que fueran observables, y proyectos de cómputo ejecutable sin exigir que su costo en recursos estuviera acotado. Dicho de otro modo: una Prueba de Dominio podía aprobarse demostrando que el artefacto *funciona*, sin poder decir a qué latencia, con qué tasa de error, contra qué recurso saturado ni a qué costo. Para un plan cuyas competencias C3 y C4 son precisamente razonar cuantitativamente sobre sistemas, eso es un hueco en el instrumento de evaluación, no una omisión de temario.
+**El defecto.** MIT renumeró sus asignaturas de EECS en 2022, y **el plan migró parte de sus citas y dejó el resto en el esquema anterior**. La auditoría de §39 lo estableció con evidencia simétrica: los diez números que el plan cita en esquema nuevo existen todos, y los cinco que cita en esquema antiguo están todos muertos. No eran errores independientes — era un solo evento incompleto. Junto a eso, dos números malformados y una cita a un contenedor de temas especiales que no es un curso.
 
-**La corrección.** Dos criterios nuevos en §15, que es donde vive el protocolo de Pruebas de Dominio: **§15.7 instrumentación obligatoria** —criterio-compuerta en SIS-501 y SIS-701, sujeto a la regla de no compensación de §6— y **§15.8 contabilidad de costo**, redactado como principio general y aplicado a las 23 fichas cuyo entregable es un programa cuyo costo crece con el tamaño de la entrada. La lista de las 23 se deriva del criterio y es re-derivable; las 16 que quedan fuera y la excepción declarada de ALG-402 están en §15.2 con su motivo. Cada párrafo de ficha nombra la cantidad concreta que cierra una decisión de diseño: un criterio de costo que solo produce tablas de medición que nadie usa para decidir es contabilidad ritual, y §17 ya declara la presunción contra las prácticas que se sienten productivas sin serlo.
+**La corrección.** Cinco correcciones mecánicas sobre seis fichas, todas verificadas contra catálogo oficial: `6.106` → **6.1060** (ALG-403, SIS-702, dígito faltante); `6.820` → **6.5110** (LEN-502); `18.100` → **18.100A/B** (MAT-103, la asignatura sin sufijo no existe); se añade **6.1810** a SIS-203, que cubre la memoria virtual que su fuente de bases de datos no trata; y se retira **UC Berkeley CS294** de TEO-601, que no es un curso sino un número de temas especiales con secciones simultáneas.
 
-**Lo que no cambió.** Ninguna tabla de carga, créditos o horas: §3.2, §3.3, §4.1, §26 y §29 están intactos y siguen siendo recalculables desde las fichas. Las unidades semanales de las 47 fichas tampoco cambian. Lo único que se añadió a las fichas es el criterio de evaluación que les faltaba.
+**Lo que sigue abierto, y es más de lo que se corrigió.** §39 documenta 39 hallazgos y esta revisión resuelve ocho. Quedan cinco casos que exigen decisión de contenido y están abiertos como issues: **ALG-801** sin ningún ADN verificable, **LEN-701** con tres fuentes y tres modos de fallo, **IAP-601** con dos tercios de su Prueba de Dominio sin anclaje, **INV-801/INV-802** con citas que no son de asignatura, y la **brecha de prerrequisito de TEO-601**, que exige 8.05 sin que el plan enseñe mecánica cuántica. Hasta que se cierren, **el campo ADN debe leerse como indicativo y no como verificado**, salvo donde §39 lo confirma.
 
 ---
 
-> Las notas de revisiones anteriores están archivadas en el §37 de [`CHANGELOG.md`](CHANGELOG.md), según la convención de notas de revisión de [`CONTRIBUTING.md`](CONTRIBUTING.md). La nota de la 2026.2 —que documenta el error de 1.7× en el presupuesto de horas y su corrección— está en §37.1.
+> Las notas de revisiones anteriores están archivadas en el §37 de [`CHANGELOG.md`](CHANGELOG.md), según la convención de notas de revisión de [`CONTRIBUTING.md`](CONTRIBUTING.md): la de la **2026.2** —el error de 1.7× en el presupuesto de horas— en §37.1, y la de la **2026.3** —los criterios de instrumentación y costo— en §37.2.
 
 ---
 
@@ -416,7 +416,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [`VERIFICATION.md`](VERIFICATION.md) | Estado de verificación de fuentes primarias |
 | [`REFERENCES.md`](REFERENCES.md) | Bibliografía completa por capa |
 | [`EXCLUSIONS.md`](EXCLUSIONS.md) | Qué queda fuera del programa y por qué |
-| [`CHANGELOG.md`](CHANGELOG.md) | Registro de cambios 2026.1 → 2026.2 → 2026.3 |
+| [`CHANGELOG.md`](CHANGELOG.md) | Registro de cambios 2026.1 → 2026.4, más el archivo de notas de revisión (§37) |
 | [`FAQ.md`](FAQ.md) | Preguntas frecuentes |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Cómo evoluciona este documento |
 

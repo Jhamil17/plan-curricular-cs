@@ -7,7 +7,7 @@
 | **Dificultad** | 10/10 |
 | **Perfil de evaluación** | Sistemas |
 | **Prerrequisitos** | LEN-201, TEO-303 |
-| **ADN institucional** | CMU 15-414 · MIT 6.820 |
+| **ADN institucional** | CMU 15-414 · MIT 6.5110 |
 
 **Competencia terminal.** Especifica una propiedad temporal, la verifica mecánicamente y interpreta el contraejemplo cuando falla.
 
