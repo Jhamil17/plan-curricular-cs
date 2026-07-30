@@ -86,7 +86,7 @@ Corregido en §3.2 y §26: las horas ahora se derivan aritméticamente del campo
 
 **Auditoría realizada el 29/07/2026.** §32 verificó diez puntos declarados pendientes por la 2026.1. Esta sección hace algo distinto y más amplio: verifica **el campo `ADN institucional` de todas las fichas que lo declaran**, contra la página oficial de la institución citada.
 
-**Es un diagnóstico, no una corrección.** Ninguna ficha se modificó al escribir esta sección. Los hallazgos que requieren decisión de contenido están abiertos como issues del repositorio; los mecánicos esperan revisión declarada, porque modificar fichas cae bajo el punto 3 del proceso de versionado de `CONTRIBUTING.md`.
+**Era un diagnóstico cuando se escribió.** Ninguna ficha se modificó al redactar esta sección. **La revisión 2026.4 aplicó después las ocho correcciones mecánicas** que aquí se marcan como `corregido en 2026.4`; el resto sigue abierto. Los hallazgos que requieren decisión de contenido están abiertos como issues del repositorio.
 
 ### 39.1 Alcance y método
 
@@ -120,15 +120,15 @@ No son ocho errores independientes. Es **un solo evento incompleto**. MIT renume
 
 | Número | Fichas | Sucesor identificado |
 |---|---|---|
-| `6.441` | TEO-401 | 6.7470 / 6.7480, **ambos de posgrado**; la única de pregrado es 18.424, un seminario |
-| `6.820` | LEN-201, LEN-502 | **6.5110** «Foundations of Program Analysis» (posgrado) |
-| `6.826` | LEN-701 | no identificado |
-| `6.829` | SIS-502 | no identificado |
-| `6.890` | ALG-801 | no identificado |
+| `6.441` | TEO-401 | 6.7470 / 6.7480, **ambos de posgrado**; la única de pregrado es 18.424, un seminario. **Abierto** — issue #9 |
+| `6.820` | LEN-201, LEN-502 | **6.5110** «Foundations of Program Analysis» (posgrado). ✔ **Aplicado en LEN-502 en 2026.4**; en LEN-201 sigue abierto por dominio equivocado (issue #5) |
+| `6.826` | LEN-701 | no identificado. **Abierto** — issue #9 |
+| `6.829` | SIS-502 | no identificado. **Abierto** — issue #9 |
+| `6.890` | ALG-801 | no identificado. **Abierto** — issues #4 y #9 |
 
-**Los dos números `6.Sxxx` fallan igual:** `6.S965` (IAP-801) no existe; `6.S191` (IAP-602) existe solo como contenedor genérico (§39.5).
+**Los dos números `6.Sxxx` fallan igual:** `6.S965` (IAP-801) no existe; `6.S191` (IAP-602) existe solo como contenedor genérico (§39.5). Ambos **abiertos**.
 
-**Dos malformados, de otra naturaleza:** `6.106` debe ser **`6.1060`** (ALG-403, SIS-702) — dígito faltante; y `18.100` **exige variante A/B/P/Q** (MAT-103) — no hay asignatura sin sufijo.
+**Dos malformados, de otra naturaleza, ✔ los dos corregidos en 2026.4:** `6.106` era **`6.1060`** (ALG-403, SIS-702) — dígito faltante; y `18.100` exigía variante, ahora **`18.100A/B`** (MAT-103).
 
 **Valor operativo del hallazgo.** Convierte una lista de incidentes en una **regla de barrido mecánica**: todo `6.xxx` de tres dígitos y todo `6.Sxxx` es sospechoso por defecto. La próxima revisión debe auditar por formato de número, no ficha por ficha.
 
@@ -138,11 +138,13 @@ No son ocho errores independientes. Es **un solo evento incompleto**. MIT renume
 
 Seis cursos son citados por dos fichas cada uno. En **tres de los seis el curso compartido arrastra el mismo defecto a ambas**, de modo que una corrección resuelve dos síntomas:
 
-| Corrección única | Resuelve |
-|---|---|
-| `6.820` → **6.5110** | LEN-201, LEN-502 |
-| `6.106` → **6.1060** | ALG-403, SIS-702 |
-| Retirar **UC Berkeley CS294** | TEO-601, ALG-801 |
+| Corrección única | Resuelve | Estado |
+|---|---|---|
+| `6.820` → **6.5110** | LEN-201, LEN-502 | ✔ **LEN-502 en 2026.4**; LEN-201 abierto (issue #5) |
+| `6.106` → **6.1060** | ALG-403, SIS-702 | ✔ **las dos, en 2026.4** |
+| Retirar **UC Berkeley CS294** | TEO-601, ALG-801 | ✔ **TEO-601 en 2026.4**; ALG-801 abierto (issue #4) |
+
+**Nota sobre el apalancamiento realizado.** De los tres casos, solo `6.106` se resolvió completo en 2026.4. En los otros dos, la mitad que quedaba fuera lo hacía por una razón asimétrica que solo se ve al intentar aplicarla: **retirar CS294 de ALG-801 la deja sin ninguna fuente**, y **6.5110 es análisis de programas mientras LEN-201 es λ-cálculo**. El apalancamiento existía como oportunidad, pero solo era completo en uno de los tres.
 
 Los otros tres son **repartos legítimos que el plan no declara** y que deberían figurar como tales en vez de como fuente independiente en cada ficha:
 
@@ -207,15 +209,15 @@ Categoría distinta de la sobreafirmación de unidad: aquí **el artefacto que d
 
 **Sub-patrón de remediación barata: la fuente correcta ya está en el plan, citada por otra ficha.** Cinco huecos se cierran moviendo o añadiendo una cita que el propio plan ya contiene:
 
-| Hueco | Fuente ya presente en el plan |
-|---|---|
-| ALG-201 · heaps y análisis amortizado | **6.1220** los lista — es el ADN de ALG-401 |
-| IAP-602 U5 · mixture-of-experts | **CS336** lo cubre — es el ADN de IAP-801 |
-| LEN-502 · model checking e interpretación abstracta | **6.5110** los cubre — es el sucesor de su propia cita muerta |
-| SIS-201 U3 · procesador segmentado | **6.1910** lo lista — es el ADN de SIS-202 |
-| SIS-203 U1–U2 · memoria virtual y TLB | **6.1810** los cubre — es el ADN de SIS-501 |
+| Hueco | Fuente ya presente en el plan | Estado |
+|---|---|---|
+| ALG-201 · heaps y análisis amortizado | **6.1220** los lista — es el ADN de ALG-401 | Abierto: cierre parcial (issue #6) |
+| IAP-602 U5 · mixture-of-experts | **CS336** lo cubre — es el ADN de IAP-801 | Abierto: cierre parcial |
+| LEN-502 · model checking e interpretación abstracta | **6.5110** los cubre — es el sucesor de su propia cita muerta | ✔ **aplicado en 2026.4** |
+| SIS-201 U3 · procesador segmentado | **6.1910** lo lista — es el ADN de SIS-202 | Abierto: cierre parcial |
+| SIS-203 U1–U2 · memoria virtual y TLB | **6.1810** los cubre — es el ADN de SIS-501 | ✔ **aplicado en 2026.4** |
 
-Tres de los cinco son cierres **parciales** y deben declararse así: 6.1220 lista *heaps* y análisis amortizado pero no nombra Fibonacci heaps; 6.1910 lista procesador segmentado pero no predicción de saltos ni ejecución especulativa; CS336 cubre MoE pero no S4/Mamba ni atención lineal.
+Tres de los cinco son cierres **parciales** y por eso siguen abiertos: 6.1220 lista *heaps* y análisis amortizado pero no nombra Fibonacci heaps; 6.1910 lista procesador segmentado pero no predicción de saltos ni ejecución especulativa; CS336 cubre MoE pero no S4/Mamba ni atención lineal. **Los dos que se aplicaron en 2026.4 eran cierres completos.**
 
 ### 39.8 Hallazgos estructurales de ficha única ✖ `abierto`
 
@@ -275,6 +277,8 @@ Consecuencia metodológica que queda como regla: de una página de listado, **lo
 
 **Lo que esta auditoría no hizo.** No verificó las notas *(ex NNNN)* (§39.2), ni la bibliografía de las fichas, ni los recursos, ni si los cursos citados aceptan estudiantes externos. Verificó el campo ADN y su correspondencia con las unidades declaradas, nada más.
 
+**Omisión de la auditoría, detectada al aplicar 2026.4.** Esta sección auditó el campo ADN de las fichas y **no advirtió que está duplicado**: la misma cita vive en la ficha, en la fila correspondiente de la malla curricular del `README.md`, y a veces una tercera vez en el campo `Recursos` de la propia ficha. Las recomendaciones de remediación de §39.3 y §39.7 decían «corregir el campo ADN» sin señalar que hay dos o tres copias, y la revisión 2026.4 lo descubrió al dejar momentáneamente seis fichas contradiciendo a su índice. La regla correctiva quedó como checklist permanente en `CONTRIBUTING.md` y registrada en §38.5 de `CHANGELOG.md`.
+
 ### 39.12 Resumen del estado
 
 | Categoría | n |
@@ -298,7 +302,9 @@ Consecuencia metodológica que queda como regla: de una página de listado, **lo
 
 **Declaración de alcance.** Esta auditoría verificó las 39 fichas con ADN declarado. **No se afirma haber verificado las nueve fuentes de §39.11**, ni ninguna nota *(ex NNNN)*. Un lector o agente que necesite cualquiera de ellas debe verificarla por su cuenta y anotar la fecha.
 
-**Condición de cierre.** §39 se cierra cuando los defectos de §39.2 y §39.3 estén corregidos en las fichas y los cinco casos estructurales de §39.7–§39.9 tengan decisión declarada. Hasta entonces queda abierta, y **el campo ADN del plan debe leerse como indicativo y no como verificado**, salvo en las cinco fichas de §39.10.
+**Estado tras la revisión 2026.4.** Se aplicaron **ocho de los hallazgos**, todos mecánicos y verificados, sobre seis fichas: MAT-103, SIS-203, ALG-403, LEN-502, TEO-601 y SIS-702. El registro está en §38 de `CHANGELOG.md`. Los defectos restantes de §39.2 siguen abiertos por falta del crosswalk de renumeración, y los cinco casos estructurales de §39.7–§39.9 siguen esperando decisión, cada uno en su issue.
+
+**Condición de cierre.** §39 se cierra cuando los defectos restantes de §39.2 estén corregidos y los cinco casos estructurales tengan decisión declarada. Hasta entonces queda abierta, y **el campo ADN del plan debe leerse como indicativo y no como verificado**, salvo en las cinco fichas de §39.10 y en las seis corregidas en 2026.4.
 
 ---
 

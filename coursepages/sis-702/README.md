@@ -7,7 +7,7 @@
 | **Dificultad** | 9/10 |
 | **Perfil de evaluación** | Sistemas |
 | **Prerrequisitos** | ALG-403, SIS-201 |
-| **ADN institucional** | Stanford CS315A · MIT 6.106 *(ex 6.172)* · CMU 15-418/618 |
+| **ADN institucional** | Stanford CS315A · MIT 6.1060 *(ex 6.172)* · CMU 15-418/618 |
 
 **Competencia terminal.** Explica cada optimización de rendimiento desde un modelo cuantitativo y alcanza una fracción justificada del límite teórico del hardware.
 
@@ -30,7 +30,7 @@
 - **Complementaria:** *Computer Architecture: A Quantitative Approach* (6ª ed.) — Hennessy & Patterson · *Performance Analysis and Tuning on Modern CPUs* — Bakhvalov (gratuito)
 - **Papers:** *"Roofline: An Insightful Visual Performance Model"* — Williams, Waterman & Patterson (CACM 2009)
 
-**Recursos.** CMU 15-418 (video completo) · MIT 6.106 · Documentación del vendor de la GPU disponible (**verificar generación y guía de tuning vigente**) · Nsight Compute, `perf`, likwid · CUTLASS como referencia de GEMM optimizado.
+**Recursos.** CMU 15-418 (video completo) · MIT 6.1060 · Documentación del vendor de la GPU disponible (**verificar generación y guía de tuning vigente**) · Nsight Compute, `perf`, likwid · CUTLASS como referencia de GEMM optimizado.
 
 **Protocolo de estudio.** Ninguna optimización se acepta sin medición antes/después **y** sin explicación causal desde el modelo roofline. Optimizar sin modelo es superstición: produce mejoras que no se transfieren y regresiones que no se explican.
 

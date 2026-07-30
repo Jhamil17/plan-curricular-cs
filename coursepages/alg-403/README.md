@@ -7,7 +7,7 @@
 | **Dificultad** | 9/10 |
 | **Perfil de evaluación** | Sistemas |
 | **Prerrequisitos** | ALG-201, SIS-201 |
-| **ADN institucional** | CMU 15-210 · Stanford CS149 · MIT 6.106 *(ex 6.172)* |
+| **ADN institucional** | CMU 15-210 · Stanford CS149 · MIT 6.1060 *(ex 6.172)* |
 
 **Competencia terminal.** Analiza un algoritmo paralelo en términos de trabajo y span, y demuestra la linearizabilidad de una estructura concurrente.
 
@@ -30,7 +30,7 @@
 - **Complementaria:** *Introduction to Parallel Computing* — Kumar et al. · *Structured Parallel Programming* — McCool, Reinders & Robison
 - **Papers:** *"Scheduling Multithreaded Computations by Work Stealing"* — Blumofe & Leiserson (JACM 1999) · *"Linearizability: A Correctness Condition for Concurrent Objects"* — Herlihy & Wing (TOPLAS 1990)
 
-**Recursos.** CMU 15-210 · Stanford CS149 · MIT 6.106 · ThreadSanitizer, `perf`, Intel Inspector · Cilk / OpenCilk.
+**Recursos.** CMU 15-210 · Stanford CS149 · MIT 6.1060 · ThreadSanitizer, `perf`, Intel Inspector · Cilk / OpenCilk.
 
 **Protocolo de estudio.** Todo argumento de correctitud concurrente se escribe primero como historia de ejecución con entrelazado explícito, antes de codificar. Los bugs de concurrencia no se depuran: se previenen en la especificación, porque no son reproducibles.
 

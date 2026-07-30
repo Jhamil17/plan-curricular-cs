@@ -1,6 +1,6 @@
 # Ciencias de la Computación — Programa de Rigor Extendido
 
-🎓 Currículo autodiseñado de nivel bachiller + licenciatura en Ciencias de la Computación, con orientación a teoría, sistemas y métodos formales. Versión **2026.3**.
+🎓 Currículo autodiseñado de nivel bachiller + licenciatura en Ciencias de la Computación, con orientación a teoría, sistemas y métodos formales. Versión **2026.4**.
 
 Este repositorio replica el formato de [ossu/computer-science](https://github.com/ossu/computer-science) — índice navegable con una ficha (README propio) por asignatura, tabla de prerrequisitos y changelog versionado — pero con contenido, metodología y sistema de evaluación propios. No es una copia del currículo de OSSU; ver [`RESOURCES.md`](RESOURCES.md) para dónde sí se apoya en cursos de OSSU y otras fuentes abiertas.
 
@@ -8,23 +8,23 @@ Este repositorio replica el formato de [ossu/computer-science](https://github.co
 
 # PLAN CURRICULAR
 ## Ciencias de la Computación — Programa de Rigor Extendido
-### Versión 2026.3
+### Versión 2026.4
 
 ---
 
-## Nota de la revisión 2026.3
+## Nota de la revisión 2026.4
 
-Esta versión corrige un defecto de los criterios de evaluación. No añade contenido, no crea asignaturas y no altera la carga horaria: las 47 unidades, los 201 créditos y las ≈11 300 horas de la 2026.2 quedan idénticos.
+Esta versión corrige defectos de **citación**, no de contenido. No añade ni retira temario, no crea asignaturas y no altera carga horaria: las 47 unidades, los 201 créditos y las ≈11 300 horas quedan idénticos. Lo único que cambia son seis líneas del campo `ADN institucional`.
 
-**El defecto.** El plan evaluaba sistemas distribuidos y núcleos sin exigir que fueran observables, y proyectos de cómputo ejecutable sin exigir que su costo en recursos estuviera acotado. Dicho de otro modo: una Prueba de Dominio podía aprobarse demostrando que el artefacto *funciona*, sin poder decir a qué latencia, con qué tasa de error, contra qué recurso saturado ni a qué costo. Para un plan cuyas competencias C3 y C4 son precisamente razonar cuantitativamente sobre sistemas, eso es un hueco en el instrumento de evaluación, no una omisión de temario.
+**El defecto.** MIT renumeró sus asignaturas de EECS en 2022, y **el plan migró parte de sus citas y dejó el resto en el esquema anterior**. La auditoría de §39 lo estableció con evidencia simétrica: los diez números que el plan cita en esquema nuevo existen todos, y los cinco que cita en esquema antiguo están todos muertos. No eran errores independientes — era un solo evento incompleto. Junto a eso, dos números malformados y una cita a un contenedor de temas especiales que no es un curso.
 
-**La corrección.** Dos criterios nuevos en §15, que es donde vive el protocolo de Pruebas de Dominio: **§15.7 instrumentación obligatoria** —criterio-compuerta en SIS-501 y SIS-701, sujeto a la regla de no compensación de §6— y **§15.8 contabilidad de costo**, redactado como principio general y aplicado a las 23 fichas cuyo entregable es un programa cuyo costo crece con el tamaño de la entrada. La lista de las 23 se deriva del criterio y es re-derivable; las 16 que quedan fuera y la excepción declarada de ALG-402 están en §15.2 con su motivo. Cada párrafo de ficha nombra la cantidad concreta que cierra una decisión de diseño: un criterio de costo que solo produce tablas de medición que nadie usa para decidir es contabilidad ritual, y §17 ya declara la presunción contra las prácticas que se sienten productivas sin serlo.
+**La corrección.** Cinco correcciones mecánicas sobre seis fichas, todas verificadas contra catálogo oficial: `6.106` → **6.1060** (ALG-403, SIS-702, dígito faltante); `6.820` → **6.5110** (LEN-502); `18.100` → **18.100A/B** (MAT-103, la asignatura sin sufijo no existe); se añade **6.1810** a SIS-203, que cubre la memoria virtual que su fuente de bases de datos no trata; y se retira **UC Berkeley CS294** de TEO-601, que no es un curso sino un número de temas especiales con secciones simultáneas.
 
-**Lo que no cambió.** Ninguna tabla de carga, créditos o horas: §3.2, §3.3, §4.1, §26 y §29 están intactos y siguen siendo recalculables desde las fichas. Las unidades semanales de las 47 fichas tampoco cambian. Lo único que se añadió a las fichas es el criterio de evaluación que les faltaba.
+**Lo que sigue abierto, y es más de lo que se corrigió.** §39 documenta 39 hallazgos y esta revisión resuelve ocho. Quedan cinco casos que exigen decisión de contenido y están abiertos como issues: **ALG-801** sin ningún ADN verificable, **LEN-701** con tres fuentes y tres modos de fallo, **IAP-601** con dos tercios de su Prueba de Dominio sin anclaje, **INV-801/INV-802** con citas que no son de asignatura, y la **brecha de prerrequisito de TEO-601**, que exige 8.05 sin que el plan enseñe mecánica cuántica. Hasta que se cierren, **el campo ADN debe leerse como indicativo y no como verificado**, salvo donde §39 lo confirma.
 
 ---
 
-> Las notas de revisiones anteriores están archivadas en el §37 de [`CHANGELOG.md`](CHANGELOG.md), según la convención de notas de revisión de [`CONTRIBUTING.md`](CONTRIBUTING.md). La nota de la 2026.2 —que documenta el error de 1.7× en el presupuesto de horas y su corrección— está en §37.1.
+> Las notas de revisiones anteriores están archivadas en el §37 de [`CHANGELOG.md`](CHANGELOG.md), según la convención de notas de revisión de [`CONTRIBUTING.md`](CONTRIBUTING.md): la de la **2026.2** —el error de 1.7× en el presupuesto de horas— en §37.1, y la de la **2026.3** —los criterios de instrumentación y costo— en §37.2.
 
 ---
 
@@ -323,7 +323,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 |---|---|---|---|---|
 | [MAT-101 — Matemáticas Discretas y Lógica Formal](coursepages/mat-101/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 10 · **16 h/sem** | ∅ | MIT 6.1200[J] *(ex 6.042)* · UC Berkeley CS70 |
 | [MAT-102 — Álgebra Lineal Computacional](coursepages/mat-102/README.md) **[NÚCLEO]** | 4 | 3–2–0 / 9 · **14 h/sem** | ∅ | MIT 18.06 (Strang) |
-| [MAT-103 — Cálculo y Análisis Real para Computación](coursepages/mat-103/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | ∅ | MIT 18.100 |
+| [MAT-103 — Cálculo y Análisis Real para Computación](coursepages/mat-103/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | ∅ | MIT 18.100A/B |
 | [MAT-104 — Probabilidad y Procesos Estocásticos](coursepages/mat-104/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 10 · **16 h/sem** | ∅ | MIT 6.3700 *(ex 6.041)* · UC Berkeley EECS 126 · Harvard Stat 110 |
 | [SIS-101 — Programación Científica y Sistemas](coursepages/sis-101/README.md) **[NÚCLEO]** | 4 | 2–0–4 / 8 · **14 h/sem** | ∅ | CMU 15-122 · MIT 6.1010 *(ex 6.009)* |
 | [INT-100 — Laboratorio Integrador I](coursepages/int-100/README.md) | 3 | 0–0–4 / 6 · **10 h/sem** | MAT-101, SIS-101 (concurrentes) | — |
@@ -336,7 +336,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [SIS-202 — Circuitos Digitales y Diseño Lógico](coursepages/sis-202/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | MAT-101 | MIT 6.1910 *(ex 6.004)* · CMU 18-240 |
 | [LEN-201 — Lenguajes de Programación y Semántica](coursepages/len-201/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 10 · **16 h/sem** | MAT-101, SIS-101 | CMU 15-150, 15-312 · MIT 6.820 |
 | [ALG-201 — Estructuras de Datos Fundamentales](coursepages/alg-201/README.md) **[NÚCLEO]** | 5 | 3–2–2 / 9 · **16 h/sem** | MAT-101, MAT-104, SIS-101 | MIT 6.1210 *(ex 6.006)* · CMU 15-210 |
-| [SIS-203 — Arquitectura de Memoria y Almacenamiento](coursepages/sis-203/README.md) | 4 | 3–0–2 / 9 · **14 h/sem** | SIS-101 | CMU 15-445 (fundamentos de almacenamiento) · Stanford CS145 |
+| [SIS-203 — Arquitectura de Memoria y Almacenamiento](coursepages/sis-203/README.md) | 4 | 3–0–2 / 9 · **14 h/sem** | SIS-101 | MIT 6.1810 · CMU 15-445 (fundamentos de almacenamiento) · Stanford CS145 |
 | [INT-200 — Laboratorio Integrador II](coursepages/int-200/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | SIS-201, SIS-202, LEN-201 (concurrentes) | — |
 
 ### Ciclo III — Teoría y Formalismo
@@ -357,7 +357,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [ALG-401 — Diseño y Análisis de Algoritmos](coursepages/alg-401/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 11 · **17 h/sem** | ALG-201, MAT-104 | MIT 6.1220[J] / 18.410[J] *(ex 6.046)* |
 | [ALG-402 — Algoritmos Avanzados y Geometría Computacional](coursepages/alg-402/README.md) | 5 | 4–2–0 / 12 · **18 h/sem** | ALG-401 (concurrente permitido) | MIT 6.5210[J] / 18.415[J] *(ex 6.854, Karger)* · Stanford CS261 |
 | [MAT-401 — Álgebra Lineal Numérica y Optimización](coursepages/mat-401/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 11 · **17 h/sem** | MAT-102, MAT-103 | Stanford EE364A/B (Boyd) · MIT 18.085 |
-| [ALG-403 — Computación Paralela y Distribuida](coursepages/alg-403/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | ALG-201, SIS-201 | CMU 15-210 · Stanford CS149 · MIT 6.106 *(ex 6.172)* |
+| [ALG-403 — Computación Paralela y Distribuida](coursepages/alg-403/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | ALG-201, SIS-201 | CMU 15-210 · Stanford CS149 · MIT 6.1060 *(ex 6.172)* |
 | [TEO-401 — Teoría de la Información y Códigos](coursepages/teo-401/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | MAT-104, MAT-302 | MIT 6.441[J] · Stanford EE376A |
 | [INT-400 — Laboratorio Integrador IV](coursepages/int-400/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | ALG-403, TEO-401, MAT-302 (concurrentes) | — |
 
@@ -369,7 +369,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [LEN-501 — Diseño de Compiladores](coursepages/len-501/README.md) **[NÚCLEO]** | 5 | 3–0–4 / 11 · **18 h/sem** | LEN-201, TEO-301, SIS-201 | Stanford CS143 · CMU 15-411 |
 | [SIS-502 — Redes de Computadoras: Protocolos y Arquitectura](coursepages/sis-502/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | SIS-201, MAT-104 | Stanford CS144 · MIT 6.829 |
 | [SIS-503 — Bases de Datos: Motores e Internals](coursepages/sis-503/README.md) **[NÚCLEO]** | 5 | 3–0–4 / 11 · **18 h/sem** | SIS-203, ALG-201 | CMU 15-445 / 645 (Andrew Pavlo) |
-| [LEN-502 — Verificación Formal y Métodos Formales](coursepages/len-502/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | LEN-201, TEO-303 | CMU 15-414 · MIT 6.820 |
+| [LEN-502 — Verificación Formal y Métodos Formales](coursepages/len-502/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | LEN-201, TEO-303 | CMU 15-414 · MIT 6.5110 |
 | [INT-500 — Laboratorio Integrador V](coursepages/int-500/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | SIS-501, LEN-501, LEN-502 (concurrentes) | — |
 
 ### Ciclo VI — IA y Aprendizaje
@@ -379,7 +379,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [IAP-601 — Fundamentos Matemáticos del Aprendizaje Automático](coursepages/iap-601/README.md) **[NÚCLEO]** | 5 | 4–2–0 / 11 · **17 h/sem** | MAT-104, MAT-401, ALG-401 | Stanford CS229 · UC Berkeley CS189 — vertiente teórica |
 | [IAP-602 — Redes Neuronales Profundas: Teoría y Arquitecturas](coursepages/iap-602/README.md) **[NÚCLEO]** | 5 | 3–0–4 / 11 · **18 h/sem** | IAP-601 (concurrente permitido) | Stanford CS231N y CS224N · MIT 6.S191 |
 | [IAP-603 — Inteligencia Artificial: Búsqueda, Planificación y Razonamiento](coursepages/iap-603/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | MAT-104, ALG-401 | UC Berkeley CS188 · Stanford CS221 — vertiente teórica |
-| [TEO-601 — Computación Cuántica: Teoría y Algoritmos](coursepages/teo-601/README.md) | 5 | 4–2–0 / 11 · **17 h/sem** | MAT-102, MAT-302, TEO-302 | MIT 8.370[J] / 18.435[J] · UC Berkeley CS294 |
+| [TEO-601 — Computación Cuántica: Teoría y Algoritmos](coursepages/teo-601/README.md) | 5 | 4–2–0 / 11 · **17 h/sem** | MAT-102, MAT-302, TEO-302 | MIT 8.370[J] / 18.435[J] |
 | [MAT-601 — Geometría Diferencial y Álgebra Tensorial para Aprendizaje](coursepages/mat-601/README.md) | 4 | 3–2–0 / 9 · **14 h/sem** | MAT-103, MAT-401 | Stanford CS468 · MIT 18.950 |
 | [INT-600 — Laboratorio Integrador VI](coursepages/int-600/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | IAP-602, MAT-601 (concurrentes) | — |
 
@@ -391,7 +391,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [SIS-701 — Sistemas Distribuidos: Teoría y Construcción](coursepages/sis-701/README.md) **[NÚCLEO]** | 5 | 3–0–4 / 11 · **18 h/sem** | SIS-501, SIS-502, ALG-403 | MIT 6.5840 *(ex 6.824)* · CMU 15-440 |
 | [SEG-702 — Seguridad de Sistemas y Ataques a Bajo Nivel](coursepages/seg-702/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | SIS-201, SIS-501 | CMU 15-330 · UC Berkeley CS161 · Stanford CS155 |
 | [LEN-701 — Tipos Dependientes y Verificación Mecanizada](coursepages/len-701/README.md) | 5 | 3–2–2 / 10 · **17 h/sem** | LEN-201, LEN-502, TEO-303 | CMU 15-317 y 15-819 · MIT 6.826 |
-| [SIS-702 — Computación de Alto Rendimiento y Arquitecturas Especializadas](coursepages/sis-702/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | ALG-403, SIS-201 | Stanford CS315A · MIT 6.106 *(ex 6.172)* · CMU 15-418/618 |
+| [SIS-702 — Computación de Alto Rendimiento y Arquitecturas Especializadas](coursepages/sis-702/README.md) | 4 | 2–0–4 / 8 · **14 h/sem** | ALG-403, SIS-201 | Stanford CS315A · MIT 6.1060 *(ex 6.172)* · CMU 15-418/618 |
 | [INT-700 — Laboratorio Integrador VII](coursepages/int-700/README.md) | 2 | 0–0–3 / 5 · **8 h/sem** | SEG-701, SIS-701, SIS-702 (concurrentes) | — |
 
 ### Ciclo VIII — Frontera y Síntesis
@@ -416,7 +416,7 @@ Cada asignatura enlaza a su propia ficha (`coursepages/<código>/README.md`) con
 | [`VERIFICATION.md`](VERIFICATION.md) | Estado de verificación de fuentes primarias |
 | [`REFERENCES.md`](REFERENCES.md) | Bibliografía completa por capa |
 | [`EXCLUSIONS.md`](EXCLUSIONS.md) | Qué queda fuera del programa y por qué |
-| [`CHANGELOG.md`](CHANGELOG.md) | Registro de cambios 2026.1 → 2026.2 → 2026.3 |
+| [`CHANGELOG.md`](CHANGELOG.md) | Registro de cambios 2026.1 → 2026.4, más el archivo de notas de revisión (§37) |
 | [`FAQ.md`](FAQ.md) | Preguntas frecuentes |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Cómo evoluciona este documento |
 

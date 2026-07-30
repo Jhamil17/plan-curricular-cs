@@ -7,7 +7,7 @@
 | **Dificultad** | 10/10 |
 | **Perfil de evaluación** | Sistemas |
 | **Prerrequisitos** | MAT-102, MAT-302, TEO-302 |
-| **ADN institucional** | MIT 8.370[J] / 18.435[J] · UC Berkeley CS294 |
+| **ADN institucional** | MIT 8.370[J] / 18.435[J] |
 
 **Competencia terminal.** Deriva algoritmos cuánticos desde primeros principios y sitúa BQP respecto de las clases clásicas.
 

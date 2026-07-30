@@ -37,3 +37,25 @@ El archivo de §37 corrige los tres: número fijo, contador de subsecciones inde
 **No se enumeran números futuros.** La primera redacción de esta convención decía «(§38, §39, …)», y quedó inexacta en cuanto §39 se asignó a la auditoría de citas de `VERIFICATION.md`. Un número solo se declara reservado cuando se reserva: **§38 está reservada para el registro 2026.3 → 2026.4**; los siguientes se asignan al usarse, consultando primero qué está ocupado.
 
 **Obligación al migrar.** Corregir toda referencia que apunte a la nota en su ubicación anterior —enlaces, anchors y menciones en prosa desde cualquier archivo del repositorio— en el mismo commit que la mueve. Una nota migrada que deja referencias colgando es peor que una nota acumulada.
+
+## Checklist para editar el campo `ADN institucional`
+
+**El campo está duplicado, y a veces triplicado.** No es un campo único por asignatura: la misma cita vive en varios lugares que hay que mantener sincronizados a mano. Corregir solo uno deja el plan contradiciéndose a sí mismo.
+
+Antes de dar por cerrada cualquier edición de ADN, recorrer los cinco puntos:
+
+- [ ] **1. La ficha.** `coursepages/<código>/README.md`, fila `**ADN institucional**` de la tabla de cabecera.
+- [ ] **2. La malla curricular del `README.md`.** La fila de esa asignatura en la tabla de su ciclo, última columna. **Es la que se olvida.**
+- [ ] **3. El campo `Recursos` de la ficha.** Algunas fichas repiten ahí el número del curso fuente. No todas: hay que mirar.
+- [ ] **4. Verificar contra catálogo oficial antes de publicar**, no después. Fuente primaria: catálogo de la institución o sitio oficial del curso. Nunca agregadores.
+- [ ] **5. Cerrar con `grep`.** La edición no está completa hasta que buscar el código viejo en todo el repositorio devuelve solo menciones históricas:
+
+```
+grep -rn "<código viejo>" . --include=*.md
+```
+
+**Las menciones históricas se conservan.** `CHANGELOG.md` y `VERIFICATION.md` deben seguir citando el número viejo: son el registro de qué se corrigió y cuándo, y borrarlo destruiría la trazabilidad. Todo lo demás debe estar limpio.
+
+**Regla de sospecha por formato.** Antes de confiar en cualquier número de MIT ya presente en el plan: **todo `6.xxx` de tres dígitos y todo `6.Sxxx` es sospechoso por defecto.** MIT renumeró EECS en 2022 y el plan quedó a medio migrar; §39.2 de `VERIFICATION.md` documenta que los cinco números en esquema antiguo que citaba estaban todos muertos, y los diez en esquema nuevo, todos vivos. Un barrido por formato de número encuentra la clase entera de error más rápido que auditar ficha por ficha.
+
+**Procedencia de este checklist.** No es preventivo en abstracto: la revisión 2026.4 corrigió las fichas y olvidó la malla del `README.md`, dejando durante dos commits seis fichas que contradecían a su propio índice. La auditoría de §39, que había recomendado las correcciones, tampoco advirtió la duplicación. Ver §38.5 de `CHANGELOG.md`.
