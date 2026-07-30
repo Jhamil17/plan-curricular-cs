@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Derivación analítica de las leyes de escalamiento desde primeros principios estadísticos + implementación de un Transformer decoder-only con KV-cache y decodificación especulativa, con predicción teórica de la mejora de throughput contrastada contra la medición real y la discrepancia explicada desde el modelo roofline de SIS-702.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo (FLOPs de entrenamiento e inferencia, contados y medidos), memoria —incluida la del KV-cache en función de la longitud de contexto— y **precio por GPU-hora** del proveedor citado como constante declarada, con el escalamiento del costo declarado respecto al tamaño del modelo, la longitud de contexto y el número de tokens servidos. Enlaza con la contabilidad de recursos de la unidad 1: el presupuesto de cómputo del entrenamiento se convierte en presupuesto monetario con una única constante.
+
 **Bibliografía.**
 - **Base:** Materiales públicos de Stanford CS336 (lecturas, assignments y video de la edición vigente)
 - **Complementaria:** *Understanding Deep Learning* — Prince (base arquitectónica) · *Speech and Language Processing* (3ª ed. en borrador) — Jurafsky & Martin (gratuito)

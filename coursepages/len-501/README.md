@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Compilador completo y funcional desde un lenguaje tipo C simplificado hasta x86-64, con: análisis léxico, parsing LALR(1), inferencia de tipos, representación SSA, al menos cuatro optimizaciones dataflow y asignación de registros por coloración. Cada optimización acompañada de un test de regresión que falla si la optimización rompe la semántica.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del compilador y se declara su escalamiento respecto al tamaño del programa de entrada —por fase, con el paso dominante identificado—, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Engineering a Compiler* (3ª ed., 2022) — Cooper & Torczon
 - **Complementaria:** *Modern Compiler Implementation in ML* — Appel · *Compilers: Principles, Techniques, and Tools* — Aho, Lam, Sethi & Ullman (el "dragon book") · *SSA-based Compiler Design* — Rastello & Bouchez (gratuito)

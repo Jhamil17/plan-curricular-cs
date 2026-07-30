@@ -25,6 +25,8 @@
 
 **Prueba de Dominio.** *Attack lab* completo (explotación de stack y return-oriented programming) + *cache lab* (simulador de caché e optimización de multiplicación de matrices con maximización medida del hit rate y justificación desde el modelo de jerarquía).
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del simulador y de la multiplicación optimizada, con el escalamiento declarado respecto a la dimensión de la matriz y al tamaño de la traza. El número que decide algo es el **tamaño de bloque**: se deriva del tamaño y la asociatividad de la caché medidos, no se busca por prueba y error, y la distancia entre el bloque derivado y el óptimo empírico es el resultado — si difieren, el modelo de jerarquía está incompleto y hay que decir en qué.
+
 **Bibliografía.**
 - **Base:** *Computer Systems: A Programmer's Perspective* (3ª ed., 2016) — Bryant & O'Hallaron · **CSAPP; edición vigente**
 - **Complementaria:** *Computer Architecture: A Quantitative Approach* (6ª ed.) — Hennessy & Patterson

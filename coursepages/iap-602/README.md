@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Transformer encoder-decoder completo implementado desde cero en numpy o JAX, sin frameworks de alto nivel, con el backward pass derivado analíticamente a mano y validado con gradient checking numérico, entrenado sobre una tarea de traducción de secuencias con análisis de la curva de convergencia.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo (FLOPs de entrenamiento contados y medidos), memoria y —si el entrenamiento se ejecuta sobre acelerador— **precio por GPU-hora** del proveedor citado como constante declarada, con el escalamiento del costo declarado respecto a la longitud de secuencia y al tamaño del modelo.
+
 **Bibliografía.**
 - **Base:** *Understanding Deep Learning* — Simon J.D. Prince (MIT Press, 2023; gratuito)
 - **Complementaria:** *Deep Learning: Foundations and Concepts* — Bishop & Bishop (2023) · *Dive into Deep Learning* — Zhang et al. (gratuito). *Deep Learning* — Goodfellow, Bengio & Courville (2016) se retiene **solo como referencia histórica**: su cobertura de arquitecturas está obsoleta.

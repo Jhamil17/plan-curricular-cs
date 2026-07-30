@@ -25,6 +25,10 @@
 
 **Prueba de Dominio.** Demostración completa del Teorema FLP + implementación funcional del protocolo Raft con prueba de que mantiene la propiedad de log matching bajo fallas de crash arbitrarias. Evaluado bajo particiones de red, reordenamiento y pérdida de mensajes inyectados de forma determinista y reproducible.
 
+**Instrumentación obligatoria (§15.7).** La implementación debe exponer latencia de commit como distribución (p50 y p99), tasa de error —peticiones rechazadas, elecciones fallidas, pérdida de liderazgo— y saturación del recurso que primero se agota: ventana de replicación pendiente, retraso del log del seguidor más lento, tamaño del log antes de compactación. **Criterio-compuerta:** un Raft funcionalmente correcto que no expone las tres señales tiene la Prueba de Dominio no superada (§6).
+
+**Contabilidad de costo (§15.8).** Se acota cómputo, memoria y mensajes por operación de consenso, y se declara su escalamiento respecto al número de nodos y al tamaño del log, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *Designing Data-Intensive Applications* (**2ª ed., marzo 2026**) — Kleppmann & Riccomini
 - **Complementaria:** *Distributed Systems* (4ª ed.) — van Steen & Tanenbaum (gratuito) · *Introduction to Reliable and Secure Distributed Programming* — Cachin, Guerraoui & Rodrigues

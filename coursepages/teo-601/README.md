@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Derivación completa del algoritmo de Shor desde la reducción de factorización a order-finding, pasando por la QFT sobre ℤ_N, hasta el análisis de probabilidad de éxito y el número esperado de repeticiones + simulador clásico de circuitos cuánticos de n qubits con complejidad O(4ⁿ poly(n)), validado factorizando un semiprimo pequeño.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del simulador y se declara su escalamiento respecto al número de qubits, contrastado contra la cota O(4ⁿ poly(n)) derivada. Es la ficha donde el escalamiento del costo es el resultado, no una nota al margen: fija el límite de *n* alcanzable con el presupuesto disponible.
+
 **Bibliografía.**
 - **Base:** *Quantum Computation and Quantum Information* — Nielsen & Chuang (edición aniversario)
 - **Complementaria:** *Quantum Computing Since Democritus* — Aaronson · *Quantum Computation Lecture Notes* — Preskill (Caltech Ph219, gratuito)

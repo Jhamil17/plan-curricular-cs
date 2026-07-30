@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Verificación formal del algoritmo de exclusión mutua de Peterson en LTL usando SPIN, con interpretación del contraejemplo al debilitar una condición + prueba de correctitud de heapsort con lógica de Hoare e invariantes formalizados y mecanizados en Lean 4 o Rocq.
 
+**Contabilidad de costo (§15.8).** El costo que se acota es el de **verificar**, no el del programa verificado: número de estados alcanzables y memoria del verificador, con el escalamiento declarado respecto al número de procesos y al tamaño del modelo. El número que decide algo es **dónde explota el espacio de estados**: fija hasta cuántos procesos se puede verificar de forma exhaustiva, y es lo que convierte en decisión derivada —y no en receta— recurrir a *bitstate hashing*, abstracción o acotación de la profundidad. Un contraejemplo que no aparece porque la búsqueda se agotó no es una propiedad verificada, y saber en qué tamaño ocurre eso es parte del resultado.
+
 **Bibliografía.**
 - **Base:** *Principles of Model Checking* — Baier & Katoen
 - **Complementaria:** *Software Foundations* Vol. 1–3 — Pierce et al. (gratuito) · *The Calculus of Computation* — Bradley & Manna · *Model Checking* (2ª ed.) — Clarke et al.

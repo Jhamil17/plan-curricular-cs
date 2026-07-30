@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Solver directo tipo LAPACK escrito desde cero en C para `Ax = b` con factorización LU y pivoteo parcial. Análisis de error numérico y verificación de la complejidad O(n³) por medición.
 
+**Contabilidad de costo (§15.8).** Se cuentan las operaciones y se acota la huella de la matriz, con el escalamiento declarado respecto a la dimensión. Los dos números que deciden algo: el cociente entre el costo de factorizar —O(n³), una vez— y el de cada sustitución —O(n²)—, que dice a partir de cuántos lados derechos conviene reutilizar la factorización en lugar de re-resolver; y la mayor *n* que cabe en memoria, que crece con la raíz de la memoria disponible y no con la memoria.
+
 **Bibliografía.**
 - **Base:** *Introduction to Linear Algebra* (6ª ed., 2023) — Strang
 - **Complementaria:** *Numerical Linear Algebra* — Trefethen & Bau · *Matrix Computations* — Golub & Van Loan

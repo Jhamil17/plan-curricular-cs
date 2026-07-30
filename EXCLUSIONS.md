@@ -7,7 +7,8 @@ Lo siguiente **no** forma parte del programa. El motivo es único en todos los c
 | Contenedores (Docker) como asignatura | Herramienta operativa. Sus mecanismos —namespaces, cgroups— están en SIS-501, que es donde corresponde entenderlos. |
 | Infraestructura como código (Terraform, Kubernetes) | Configuración declarativa de proveedores. Cero contenido teórico transferible. |
 | MLOps, orquestación de LLMs, bases vectoriales, pipelines RAG | Ingeniería de producto sobre modelos. Vida media de 18 meses. Los fundamentos están en IAP-602 e IAP-801. |
-| SRE, SLIs/SLOs, chaos engineering | Práctica operativa. La inyección de fallos sí está incorporada, pero como método de evaluación en SIS-501, SIS-503 y SIS-701. |
+| SRE, SLIs/SLOs, chaos engineering | Práctica operativa. La inyección de fallos sí está incorporada, pero como método de evaluación en SIS-501, SIS-503 y SIS-701; **y la instrumentación de latencia, tasa de error y saturación también, pero como criterio de aprobación de la Prueba de Dominio en SIS-501 y SIS-701 (§15.7)**. Lo que queda fuera es el SRE como práctica de operación: guardias, error budgets, negociación de SLOs con terceros y gestión de incidentes. |
+| Aprovisionamiento y gestión de costo de infraestructura | Función de compra. **El costo sí está incorporado, pero como cantidad analítica: acotar cómputo, memoria y precio por GPU-hora de un artefacto y derivar su escalamiento es análisis de complejidad en una segunda moneda (§15.8), no aprovisionamiento.** Queda fuera la elección de proveedor, la negociación de instancias reservadas y la optimización de facturación. |
 | Emprendimiento, Lean Startup, métricas de producto | Fuera del dominio. |
 | Desarrollo web y móvil | Fuera del dominio. |
 | "Comunicación técnica" como asignatura independiente | Se ejercita en INV-801, INV-802 y en las defensas orales de los siete laboratorios integradores. Como curso separado es relleno. |

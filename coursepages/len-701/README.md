@@ -23,6 +23,8 @@
 
 **Prueba de Dominio.** Formalización completa en Lean 4 (o Rocq) de la correctitud de mergesort, incluyendo preservación de contenido (permutación) y de orden, con extracción de código ejecutable certificado y verificación de que el código extraído se comporta como el especificado.
 
+**Contabilidad de costo (§15.8).** El costo que se acota **no es el del código extraído** sino el de **elaborar y chequear la prueba**: tiempo de kernel, tamaño de los términos generados y coste de la resolución de instancias, con su escalamiento declarado respecto al tamaño de la formalización —número y profundidad de lemas, tamaño del conjunto de reescritura. Por Curry-Howard la prueba es un programa y chequearla es ejecutarlo. Es decisional: un chequeo de minutos cambia cómo se estructura la formalización, qué tácticas se evitan y cómo se reparte en archivos.
+
 **Bibliografía.**
 - **Base:** *Software Foundations* Vol. 1–3 — Pierce et al. (gratuito)
 - **Complementaria:** *Homotopy Type Theory: Univalent Foundations of Mathematics* — The Univalent Foundations Program (gratuito) · *Mathematics in Lean* (mathlib, gratuito) · *Certified Programming with Dependent Types* — Chlipala (gratuito) · *Practical Foundations for Programming Languages* — Harper

@@ -25,6 +25,8 @@
 
 **Prueba de Dominio.** Slab allocator en C con free-list, coalescing de bloques libres y demostración formal de la invariante de representación mediante contratos anotados. Sometido a inyección de patrones de asignación adversariales.
 
+**Contabilidad de costo (§15.8).** Se acota cómputo y memoria del allocator —costo por operación y fragmentación— y se declara su escalamiento respecto al número y tamaño de las asignaciones, contrastado contra la complejidad derivada.
+
 **Bibliografía.**
 - **Base:** *C Programming: A Modern Approach* (2ª ed.) — K.N. King
 - **Complementaria:** *The C Programming Language* — Kernighan & Ritchie · *Modern C* — Gustedt (gratuito)
