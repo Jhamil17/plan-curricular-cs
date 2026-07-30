@@ -201,7 +201,9 @@ Los defectos 1 a 3 no son independientes. **MIT renumeró EECS en 2022 y el plan
 
 Se registra porque en esta misma revisión el primer intento corrigió solo las fichas, y durante unos minutos el plan tuvo seis fichas contradiciendo a su propio índice. La auditoría de §39 tampoco lo había señalado: sus recomendaciones de remediación decían «corregir el campo ADN» sin advertir que hay dos o tres copias.
 
-**Regla que queda establecida:** una corrección de ADN no está completa hasta que `grep -rn "<código viejo>"` sobre todo el repositorio devuelve vacío, salvo en las menciones históricas de `CHANGELOG.md` y `VERIFICATION.md`, que deben conservar el número viejo por trazabilidad.
+**Regla que queda establecida, y no solo aquí.** Una corrección de ADN no está completa hasta que buscar el código viejo en todo el repositorio devuelve solo las menciones históricas de `CHANGELOG.md` y `VERIFICATION.md`, que conservan el número antiguo por trazabilidad.
+
+Para que no quede sepultada en el registro de una versión, la regla se instaló como **checklist permanente de cinco puntos en `CONTRIBUTING.md`**, junto con la regla de sospecha por formato de número. Un hallazgo de proceso que solo vive en el changelog de la revisión que lo descubrió no protege a la siguiente.
 
 ---
 

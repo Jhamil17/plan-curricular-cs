@@ -277,7 +277,7 @@ Consecuencia metodológica que queda como regla: de una página de listado, **lo
 
 **Lo que esta auditoría no hizo.** No verificó las notas *(ex NNNN)* (§39.2), ni la bibliografía de las fichas, ni los recursos, ni si los cursos citados aceptan estudiantes externos. Verificó el campo ADN y su correspondencia con las unidades declaradas, nada más.
 
-**Omisión de la auditoría, detectada al aplicar 2026.4.** Esta sección auditó el campo ADN de las fichas y **no advirtió que está duplicado**: la misma cita vive en la ficha, en la fila correspondiente de la malla curricular del `README.md`, y a veces una tercera vez en el campo `Recursos` de la propia ficha. Las recomendaciones de remediación de §39.3 y §39.7 decían «corregir el campo ADN» sin señalar que hay dos o tres copias, y la revisión 2026.4 lo descubrió al dejar momentáneamente seis fichas contradiciendo a su índice. La regla correctiva está en §38.5 de `CHANGELOG.md`: una corrección de ADN no está completa hasta que `grep` del código viejo sobre el repositorio devuelve vacío.
+**Omisión de la auditoría, detectada al aplicar 2026.4.** Esta sección auditó el campo ADN de las fichas y **no advirtió que está duplicado**: la misma cita vive en la ficha, en la fila correspondiente de la malla curricular del `README.md`, y a veces una tercera vez en el campo `Recursos` de la propia ficha. Las recomendaciones de remediación de §39.3 y §39.7 decían «corregir el campo ADN» sin señalar que hay dos o tres copias, y la revisión 2026.4 lo descubrió al dejar momentáneamente seis fichas contradiciendo a su índice. La regla correctiva quedó como checklist permanente en `CONTRIBUTING.md` y registrada en §38.5 de `CHANGELOG.md`.
 
 ### 39.12 Resumen del estado
 
