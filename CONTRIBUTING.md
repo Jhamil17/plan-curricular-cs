@@ -32,6 +32,8 @@ El `README.md` conserva **únicamente la nota de la revisión vigente**. Al publ
 2. **No produce un archivo, produce N huérfanas.** Con cinco revisiones las notas viven en cinco secciones distintas, y un lector que pregunte "qué advirtió cada revisión" tiene que saltar entre ellas.
 3. **Acopla la nota al número del registro.** La nota de la revisión vigente no tendría domicilio asignado hasta que la revisión *siguiente* creara su registro, de modo que la convención no puede decir dónde vivirá una nota antes de que deje de estar vigente.
 
-El archivo de §37 corrige los tres: número fijo, contador de subsecciones independiente del de los registros, y domicilio conocido de antemano. Los registros de cambios siguen tomando el siguiente entero de nivel superior (§38, §39, …); el archivo no se mueve.
+El archivo de §37 corrige los tres: número fijo, contador de subsecciones independiente del de los registros, y domicilio conocido de antemano. Los registros de cambios siguen tomando **el siguiente entero de nivel superior que esté libre**; el archivo no se mueve.
+
+**No se enumeran números futuros.** La primera redacción de esta convención decía «(§38, §39, …)», y quedó inexacta en cuanto §39 se asignó a la auditoría de citas de `VERIFICATION.md`. Un número solo se declara reservado cuando se reserva: **§38 está reservada para el registro 2026.3 → 2026.4**; los siguientes se asignan al usarse, consultando primero qué está ocupado.
 
 **Obligación al migrar.** Corregir toda referencia que apunte a la nota en su ubicación anterior —enlaces, anchors y menciones en prosa desde cualquier archivo del repositorio— en el mismo commit que la mueve. Una nota migrada que deja referencias colgando es peor que una nota acumulada.
